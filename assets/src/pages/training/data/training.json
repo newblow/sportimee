@@ -1,0 +1,23 @@
+[
+    {
+      "id": 1,
+      "title": "Relax",
+      "image": "/img1.webp",
+      "alt": "photo",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis nam magnam officia ipsam incidunt modi vero dignissimos sapiente at error? Officiis facere beatae esse quibusdam exercitationem velit solutaquae qui."
+      
+    },
+    {
+        "id": 1,
+        "title": "Premium",
+        "image": "/blow.jpg",
+        "alt": "photo",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis nam magnam officia ipsam incidunt modi vero dignissimos sapiente at error? Officiis facere beatae esse quibusdam exercitationem velit solutaquae qui."
+      }, {
+        "id": 1,
+        "title": "All-time",
+        "image": "/blow.jpg",
+        "alt": "photo",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis nam magnam officia ipsam incidunt modi vero dignissimos sapiente at error? Officiis facere beatae esse quibusdam exercitationem velit solutaquae qui."
+      }
+]

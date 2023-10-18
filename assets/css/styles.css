@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.carousel .control-dots,
+.carousel .thumbs-wrapper,
+.carousel .carousel-status {
+}
+.contain-blue {
+    background: rgba( 66, 226, 194, 0.5 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.contain-black {
+    background: rgba( 0, 0, 0, 0.75 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 5.5px );
+-webkit-backdrop-filter: blur( 5.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.contain-white {
+    background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+@font-face {
+    font-family: "Expletus-regular";
+    src: url("../fonts/Expletus_Sans/static/ExpletusSans-Regular.ttf") format("truetype");}
+  
+    @font-face {
+      font-family: "Bungee-regular";
+      src: url("../fonts/Bungee/Bungee-Regular.ttf") format("truetype");}
+
+      
