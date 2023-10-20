@@ -1,32 +1,42 @@
 import React from "react";
 import Form from "../../../tools/form";
-
-const  FooterDesktop = () => {
+import { ImFacebook2,ImInstagram,ImYoutube } from "react-icons/im";
+const FooterDesktop = () => {
   return (
     <>
       <footer>
-        <div className="grid grid-cols-3">
-          <div>
+        <div className="grid grid-cols-3 bg-teal-500">
+          <div className="m-10">
             <Form />
           </div>
-          <div className="flex flex-col items-center text-6xl">
-            <a href="Adress:" className="font-bold">
+          <div className="flex flex-col items-center text-xl m-10">
+            <div className="text-6xl m-14">
+              <h1>Contacter-nous</h1>
+            </div>
+            <a
+              href="Adress:"
+              className="font-bold text-center hover:text-white"
+            >
               30 Bd du Chevalier Bayard
               <br />
               77100 - Meaux, France
             </a>
-            <a href="mailto:" className="font-bold">
+            <br />
+            <a
+              href="mailto:"
+              className="font-bold text-center  hover:text-white"
+            >
               contact@grumiaux-portfolio.fr
             </a>
             <br />
-            <a href="tel:" className="text-xs">
+            <a href="tel:" className="text-md text-center  hover:text-white">
               +33 6.56.71.62.84 / +33 7.46.76.22.54
             </a>
-            <div>
-              <div>
+            <div className="pt-10 ">
+              <div className="text-center border-2 mx-4 hover:text-orange-300 p-4">
                 <a href="/Training">
                   <button
-                    className=""
+                    className="text-center"
                     type="button"
                     onClick={() => SubmitForm()}
                   >
@@ -36,40 +46,82 @@ const  FooterDesktop = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col">
-            <div className="">
-              <a href="/" className="">
-                Accueil
+          <div className="flex flex-col items-center">
+            <div className="flex flex-row justify-center ">
+              <a className="" href={"https://localhost:8000/"}>
+                <img
+                  src="/images/logos/stp.svg"
+                  width={200}
+                  height={80}
+                  alt="AccueilSportime"
+                  className="justify-center"
+                />
               </a>
             </div>
-            <div className=" ">
-              <a href="/about" className="">
-                A propos
-              </a>
+            <div className="flex flex-col  text-2xl underline p-4">
+              <div className="">
+                <a href="/" className="hover:text-white">
+                  Accueil
+                </a>
+              </div>
+              <div className=" ">
+                <a href="/about" className=" hover:text-white">
+                  A propos
+                </a>
+              </div>
+              <div className="">
+                <a href="/training" className=" hover:text-white">
+                  Training
+                </a>
+              </div>
+              <div className="">
+                <a href="/Abonnement" className="hover:text-white">
+                  Abonnement
+                </a>
+              </div>
+              <br />
             </div>
-            <div className="">
-              <a href="/training" className="">
-                Training
-              </a>
-            </div>
-            <div className="">
-              <a href="/Abonnement" className="">
-                Abonnement
-              </a>
+            <div className="flex flex-row items-center">
+              <div className="mx-6">
+                <a href="https://www.youtube.com/" className=" hover:text-white">
+                  <ImYoutube size="70px" height={"auto"} />
+                </a>
+              </div>
+              <div className="mx-6">
+                <a href="https://www.youtube.com/" className="mx-2 hover:text-white">
+                  <ImInstagram size="50px" height={"auto"} />
+                </a>
+              </div>
+              <div className="mx-6">
+                <a href="https://www.youtube.com/" className="mx-2 hover:text-white">
+                  <ImFacebook2 size="50px" height={"auto"} />
+                </a>
+              </div>
             </div>
           </div>
         </div>
-        <div className="bg-black text-white mt-8 text-lg">
+
+        <div className="bg-black text-white text-lg pt-5">
           <div className="flex flex-row justify-center">
-            <p className="mx-8 hover:text-teal-500">Mentions Legales</p>
-            <p className="mx-8 hover:text-teal-500">Politique en matière de cookies</p>
-            <p className="mx-8 hover:text-teal-500">Politique de confidentialité</p>
-            <p className="mx-8 hover:text-teal-500">Conditions d'utilisation</p>
+            <p className="mx-12 hover:text-teal-500 underline">
+              Mentions Legales
+            </p>
+            <p className="mx-10 hover:text-teal-500 underline">
+              Politique en matière de cookies
+            </p>
+            <p className="mx-12 hover:text-teal-500 underline">
+              Politique de confidentialité
+            </p>
+            <p className="mx-12 hover:text-teal-500 underline">
+              Conditions d'utilisation
+            </p>
           </div>
-          <p className="text-center mt-4 mb-8 ">© 2023 . Made by Devblow</p>
+          <p className="text-center pt-4 pb-5">© 2023 . Made by Devblow</p>
         </div>
-        <div className="mt-8">
-          <p className="text-white">ne rien mettre</p>
+
+        <div className="bg-teal-500">
+          <br />
+          <br />
         </div>
       </footer>
     </>

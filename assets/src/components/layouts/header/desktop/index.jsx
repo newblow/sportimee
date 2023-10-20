@@ -1,6 +1,5 @@
 import React from "react";
 import { CgToggleSquare, CgToggleSquareOff, CgProfile } from "react-icons/cg";
-// import { BsYoutube, BsTiktok, BsInstagram } from "react-icons/bs";
 import { useState } from "react";
 import DarkMode from "../../../tools/darkmode";
 
@@ -44,7 +43,7 @@ const NavbarDesktop = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-row justify-items">
+        <div className="flex flex-row items-center">
           <button
             type="button"
             className="flex flex-row justify-center pr-10"
@@ -59,29 +58,15 @@ const NavbarDesktop = () => {
               <CgToggleSquareOff size={30} className="text-white hover:text-teal-500" />
             )}
           </button>
-          <CgProfile size={25} height={"auto"} className="flex flex-row items-center hover:text-teal-500"/>
-          <div className=" flex flex-row pr-10 ">
+          <div className="flex flex-row items-center p-2">
+          <CgProfile size={25} height={"auto"} className=" hover:text-teal-500"/>
+          </div>
+          <div className=" flex flex-row px-2 ">
             <a href="/login" className="flex flex-row items-center text-center text-lg pr-8 hover:text-teal-500">
               Se connecter
             </a>
           </div>
-          {/* <div className=" col-span-3 flex flex-row justify-center  pl-4">
-            <div>
-              <a href="https://www.youtube.com/" className="mx-2">
-                <BsYoutube width={35} height={"auto"} />
-              </a>
-            </div>
-            <div>
-              <a href="https://www.youtube.com/" className="mx-2">
-                <BsInstagram width={35} height={"auto"} />
-              </a>
-            </div>
-            <div>
-              <a href="https://www.youtube.com/" className="mx-2">
-                <BsTiktok width={35} height={"auto"} />
-              </a>
-            </div>
-          </div> */}
+        
         </div>
       </div>
     </nav>

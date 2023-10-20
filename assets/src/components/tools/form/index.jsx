@@ -7,7 +7,7 @@ const Form = () => {
 
   return (
     <form
-      className="flex flex-col text-black m-4"
+      className="flex flex-col text-black mx-20 blur-10"
       action=""
       method="POST"
     >
@@ -37,15 +37,16 @@ const Form = () => {
         cols="20"
         rows="10"
       ></textarea>
-
       <div className="flex flex-row justify-center py-6">
-        <button
-          className="contain-orange p"
-          type="button"
-          onClick={() => SubmitForm()}
-        >
-          Envoyer
-        </button>
+        <div className="border hover:text-orange-300 p-2 bg-white">
+          <button
+            className=" ease-in duration-300"
+            type="button"
+            onClick={() => SubmitForm()}
+          >
+            Envoyer
+          </button>
+        </div>
       </div>
     </form>
   );

@@ -6,7 +6,7 @@ const Intro = () => {
     <>
       <body className=" mt-27 w-full">
         <div className=" bg-auto bg-no-repeat">
-          <img src="/images/image0.jpg" alt="" />
+          <img src="/images/image11.jpg" alt="" />
           {/* <h1 className="font-bold text-2xl ">
             Le Fitness deviens ton quotidien
           </h1> */}
