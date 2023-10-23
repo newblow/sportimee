@@ -64,12 +64,14 @@ const NavbarDesktop = () => {
               />
             )}
           </button>
+          <div className="hover:text-teal-500">
+
           <div className="flex flex-row justify-end " >
             <div className="flex flex-row  ">
               <CgProfile
                 size={26}
                 height={"auto"}
-                className=" hover:text-teal-500"
+                className=""
               />
             </div>
             {/* <div className="avatar online">
@@ -85,11 +87,12 @@ const NavbarDesktop = () => {
             <div className=" flex flex-row px-1 ">
               <a
                 href="/login"
-                className="text-center text-lg hover:text-teal-500"
+                className="text-center text-lg "
               >
                 Se connecter
               </a>
             </div>
+          </div>
           </div>
         </div>
       </div>
