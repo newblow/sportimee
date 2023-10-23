@@ -44,11 +44,11 @@ const Form = () => {
         placeholder="Ecriver votre message ici"
         name=""
         id=""
-        cols="20"
-        rows="10"
+        cols="10"
+        rows="8"
       ></textarea>
       <div className="flex flex-row justify-center py-6">
-        <div className="border hover:text-orange-300 p-2  rounded">
+        <div className="border-2 hover:text-orange-300 p-4  rounded">
           <button
             className=" transform:skew"
             type="button"

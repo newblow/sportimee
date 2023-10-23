@@ -32,7 +32,7 @@ const FooterDesktop = () => {
             <a href="tel:" className="text-md text-center  hover:text-white">
               +33 6.56.71.62.84 / +33 7.46.76.22.54
             </a>
-            <div className="pt-10 ">
+            <div className="pt-16 ">
               <div className="text-center border-2 mx-4 hover:text-orange-300 p-4 rounded">
                 <a href="/Training">
                   <button
@@ -46,19 +46,21 @@ const FooterDesktop = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-center border-l m-10">
-            <div className="flex flex-row items-center ">
-              <a className="" href={"https://localhost:8000/"}>
-                <img
-                  src="/images/logos/sp.svg"
-                  width={200}
-                  height={80}
-                  alt="AccueilSportime"
-                  className="justify-center"
-                />
-              </a>
+          <div className="flex flex-col items-center m-10  border-l">
+            <div className="">
+              <div className="flex flex-row items-center">
+                <a className="" href={"https://localhost:8000/"}>
+                  <img
+                    src="/images/logos/sp.svg"
+                    width={200}
+                    height={80}
+                    alt="AccueilSportime"
+                    className="justify-center"
+                  />
+                </a>
+              </div>
             </div>
-            <div className="flex flex-col  text-2xl underline p-4">
+            <div className="flex flex-col items-center text-2xl underline ">
               <div className="">
                 <a href="/" className="hover:text-white">
                   Accueil
@@ -81,13 +83,21 @@ const FooterDesktop = () => {
               </div>
               <br />
             </div>
-            <div className="flex flex-row items-center">
+            <div className="grid grid-cols-3 items-center mt-6 border-t">
               <div className="mx-6">
+                <a
+                  href="https://www.youtube.com/"
+                  className="mx-2 hover:text-white"
+                >
+                  <ImInstagram size="35px" height={"auto"} />
+                </a>
+              </div>
+              <div className="mx-4">
                 <a
                   href="https://www.youtube.com/"
                   className=" hover:text-white"
                 >
-                  <ImYoutube size="60px" height={"auto"} />
+                  <ImYoutube size="50px" height={"auto"} />
                 </a>
               </div>
               <div className="mx-6">
@@ -95,15 +105,7 @@ const FooterDesktop = () => {
                   href="https://www.youtube.com/"
                   className="mx-2 hover:text-white"
                 >
-                  <ImInstagram size="40px" height={"auto"} />
-                </a>
-              </div>
-              <div className="mx-6">
-                <a
-                  href="https://www.youtube.com/"
-                  className="mx-2 hover:text-white"
-                >
-                  <ImFacebook2 size="40px" height={"auto"} />
+                  <ImFacebook2 size="35px" height={"auto"} />
                 </a>
               </div>
             </div>
