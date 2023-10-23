@@ -37,7 +37,7 @@ const NavbarDesktop = () => {
               </a>
             </div>
             <div className="px-4 shadow-md">
-              <a href="/Abonnement" className="hover:text-teal-500">
+              <a href="/abonnement" className="hover:text-teal-500">
                 Abonnement
               </a>
             </div>
@@ -65,16 +65,11 @@ const NavbarDesktop = () => {
             )}
           </button>
           <div className="hover:text-teal-500">
-
-          <div className="flex flex-row justify-end " >
-            <div className="flex flex-row  ">
-              <CgProfile
-                size={26}
-                height={"auto"}
-                className=""
-              />
-            </div>
-            {/* <div className="avatar online">
+            <div className="flex flex-row justify-end ">
+              <div className="flex flex-row  ">
+                <CgProfile size={26} height={"auto"} className="" />
+              </div>
+              {/* <div className="avatar online">
             <div className="w-24 rounded-full">
               <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
             </div>
@@ -84,15 +79,12 @@ const NavbarDesktop = () => {
               <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
             </div>
           </div> */}
-            <div className=" flex flex-row px-1 ">
-              <a
-                href="/login"
-                className="text-center text-lg "
-              >
-                Se connecter
-              </a>
+              <div className=" flex flex-row px-1 ">
+                <a href="/login" className="text-center text-lg ">
+                  Se connecter
+                </a>
+              </div>
             </div>
-          </div>
           </div>
         </div>
       </div>
