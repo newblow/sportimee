@@ -60,7 +60,7 @@ const FooterDesktop = () => {
                 </a>
               </div>
             </div>
-            <div className="flex flex-col items-center text-2xl underline ">
+            <div className="flex flex-col items-center text-2xl underline m-4">
               <div className="">
                 <a href="/" className="hover:text-white">
                   Accueil
@@ -83,7 +83,7 @@ const FooterDesktop = () => {
               </div>
               <br />
             </div>
-            <div className="grid grid-cols-3 items-center mt-6 border-t">
+            <div className="grid grid-cols-3 items-center rounded">
               <div className="mx-6">
                 <a
                   href="https://www.youtube.com/"

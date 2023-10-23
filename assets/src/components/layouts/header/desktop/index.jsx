@@ -19,7 +19,7 @@ const NavbarDesktop = () => {
             />
           </a>
         </div>
-        <div className="">
+        <div className="flex flex-row justify-center">
           <div className="flex flex-row">
             <div className="px-4 border-r shadow-md">
               <a href="/" className="hover:text-teal-500">
@@ -43,10 +43,10 @@ const NavbarDesktop = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-row items-center">
+        <div className="flex flex-row justify-center">
           <button
             type="button"
-            className="flex flex-row justify-center pr-10"
+            className="flex flex-row justify-center pr-24"
             onClick={() => {
               DarkMode();
               setShowToggle(!showToggle);
@@ -64,14 +64,15 @@ const NavbarDesktop = () => {
               />
             )}
           </button>
-          <div className="flex flex-row items-center p-2">
-            <CgProfile
-              size={25}
-              height={"auto"}
-              className=" hover:text-teal-500"
-            />
-          </div>
-          {/* <div className="avatar online">
+          <div className="flex flex-row justify-end " >
+            <div className="flex flex-row  ">
+              <CgProfile
+                size={26}
+                height={"auto"}
+                className=" hover:text-teal-500"
+              />
+            </div>
+            {/* <div className="avatar online">
             <div className="w-24 rounded-full">
               <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
             </div>
@@ -81,13 +82,14 @@ const NavbarDesktop = () => {
               <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
             </div>
           </div> */}
-          <div className=" flex flex-row px-2 ">
-            <a
-              href="/login"
-              className="flex flex-row items-center text-center text-lg pr-8 hover:text-teal-500"
-            >
-              Se connecter
-            </a>
+            <div className=" flex flex-row px-1 ">
+              <a
+                href="/login"
+                className="text-center text-lg hover:text-teal-500"
+              >
+                Se connecter
+              </a>
+            </div>
           </div>
         </div>
       </div>
