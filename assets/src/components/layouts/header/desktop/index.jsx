@@ -53,20 +53,42 @@ const NavbarDesktop = () => {
             }}
           >
             {showToggle === false ? (
-              <CgToggleSquare size={30} className="text-white hover:text-teal-500" />
+              <CgToggleSquare
+                size={30}
+                className="text-white hover:text-teal-500"
+              />
             ) : (
-              <CgToggleSquareOff size={30} className="text-white hover:text-teal-500" />
+              <CgToggleSquareOff
+                size={30}
+                className="text-white hover:text-teal-500"
+              />
             )}
           </button>
           <div className="flex flex-row items-center p-2">
-          <CgProfile size={25} height={"auto"} className=" hover:text-teal-500"/>
+            <CgProfile
+              size={25}
+              height={"auto"}
+              className=" hover:text-teal-500"
+            />
           </div>
+          {/* <div className="avatar online">
+            <div className="w-24 rounded-full">
+              <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+            </div>
+          </div>
+          <div className="avatar offline">
+            <div className="w-24 rounded-full">
+              <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+            </div>
+          </div> */}
           <div className=" flex flex-row px-2 ">
-            <a href="/login" className="flex flex-row items-center text-center text-lg pr-8 hover:text-teal-500">
+            <a
+              href="/login"
+              className="flex flex-row items-center text-center text-lg pr-8 hover:text-teal-500"
+            >
               Se connecter
             </a>
           </div>
-        
         </div>
       </div>
     </nav>

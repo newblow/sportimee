@@ -1,16 +1,16 @@
 import React from "react";
 import Form from "../../../tools/form";
-import { ImFacebook2,ImInstagram,ImYoutube } from "react-icons/im";
+import { ImFacebook2, ImInstagram, ImYoutube } from "react-icons/im";
 const FooterDesktop = () => {
   return (
     <>
       <footer>
         <div className="grid grid-cols-3 bg-teal-500">
-          <div className="m-10">
+          <div className="m-10 border-r">
             <Form />
           </div>
           <div className="flex flex-col items-center text-xl m-10">
-            <div className="text-6xl m-14">
+            <div className="text-5xl m-14 underline font-bold">
               <h1>Contacter-nous</h1>
             </div>
             <a
@@ -33,7 +33,7 @@ const FooterDesktop = () => {
               +33 6.56.71.62.84 / +33 7.46.76.22.54
             </a>
             <div className="pt-10 ">
-              <div className="text-center border-2 mx-4 hover:text-orange-300 p-4">
+              <div className="text-center border-2 mx-4 hover:text-orange-300 p-4 rounded">
                 <a href="/Training">
                   <button
                     className="text-center"
@@ -46,11 +46,11 @@ const FooterDesktop = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-center">
-            <div className="flex flex-row justify-center ">
+          <div className="flex flex-col items-center border-l m-10">
+            <div className="flex flex-row items-center ">
               <a className="" href={"https://localhost:8000/"}>
                 <img
-                  src="/images/logos/stp.svg"
+                  src="/images/logos/sp.svg"
                   width={200}
                   height={80}
                   alt="AccueilSportime"
@@ -83,18 +83,27 @@ const FooterDesktop = () => {
             </div>
             <div className="flex flex-row items-center">
               <div className="mx-6">
-                <a href="https://www.youtube.com/" className=" hover:text-white">
-                  <ImYoutube size="70px" height={"auto"} />
+                <a
+                  href="https://www.youtube.com/"
+                  className=" hover:text-white"
+                >
+                  <ImYoutube size="60px" height={"auto"} />
                 </a>
               </div>
               <div className="mx-6">
-                <a href="https://www.youtube.com/" className="mx-2 hover:text-white">
-                  <ImInstagram size="50px" height={"auto"} />
+                <a
+                  href="https://www.youtube.com/"
+                  className="mx-2 hover:text-white"
+                >
+                  <ImInstagram size="40px" height={"auto"} />
                 </a>
               </div>
               <div className="mx-6">
-                <a href="https://www.youtube.com/" className="mx-2 hover:text-white">
-                  <ImFacebook2 size="50px" height={"auto"} />
+                <a
+                  href="https://www.youtube.com/"
+                  className="mx-2 hover:text-white"
+                >
+                  <ImFacebook2 size="40px" height={"auto"} />
                 </a>
               </div>
             </div>
