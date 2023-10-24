@@ -40,12 +40,21 @@ const Intro = () => {
             </div>
             <div class="sm:w-1/2 mb-10 px-4 flex flex-row justify-center text-black bg-white rounded">
               <div class="rounded-lg overflow-hidden w-1/2">
-               <h1 className="font-bold text-8xl text-black">
-               À propos de Base
-               </h1>
-               <p>
-               Suspendisse a ipsum vel risus facilisis posuere. Suspendisse potenti. Duis tincidunt mi purus, sed malesuada magna cursus id. Nunc sed suscipit ex. Pellentesque bibendum, erat ac elementum aliquam, nibh dolor mollis orci, in rutrum erat lectus ut ligula. <br /> Nunc quis ornare diam, ac pharetra tortor. Fusce augue ex, mollis ut turpis non, rutrum eleifend massa. Sed a luctus eros, sit amet rhoncus quam. <br /> Nam venenatis ante nec est porta interdum et eu est. Nunc vel congue felis, eu aliquam tortor. Maecenas gravida, magna at tincidunt blandit, ipsum tellus fringilla urna, id finibus mi nisl varius nisi. Duis mollis nulla nibh, ut porta magna pharetra vel.
-               </p>
+                <h1 className="font-bold text-8xl md:text-5xl text-black p-4">
+                  À propos de Base
+                </h1>
+                <p className="p-2">
+                  Suspendisse a ipsum vel risus facilisis posuere. Suspendisse
+                  potenti. Duis tincidunt mi purus, sed malesuada magna cursus
+                  id. <br />
+                  Nunc sed suscipit ex. Pellentesque bibendum, erat ac elementum
+                  aliquam.
+                </p>
+                <div className="p-4">
+                  <button class="text-white bg-teal-500 border-0 focus:outline-none hover:bg-teal-600 rounded">
+                    Lire plus
+                  </button>
+                </div>
               </div>
               {/* <h2 class="title-font text-2xl font-medium text-white mt-6 mb-3">
                 À propos de Sportime
