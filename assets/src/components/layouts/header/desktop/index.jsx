@@ -8,8 +8,9 @@ const NavbarDesktop = () => {
   return (
     <nav>
       <div className="z-10 grid grid-cols-3 items-center w-full fixed top-0 bg-black text-white">
+        
         <div className="flex flex-row justify-center ">
-          <a className="" href={"https://localhost:8000/"}>
+          <a className="" href={"http://127.0.0.1:8000/"}>
             <img
               src="/images/logos/sp1.svg"
               width={90}

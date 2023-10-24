@@ -6,7 +6,14 @@ const Intro = () => {
   return (
     <>
       <section>
-        <di>limage de merde</di>
+        <div class="overflow-hidden">
+          <img
+            alt="content"
+            class="object-cover object-center bg-cover w-full"
+            src="/images/image0.jpg"
+            width={'auto'}
+          />
+        </div>
       </section>
       <section class="text-gray-400 bg-zinc-950 body-font overflow-hidden">
         <div class="container px-5 py-36 mx-auto">

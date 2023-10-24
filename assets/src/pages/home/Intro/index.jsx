@@ -5,46 +5,63 @@ const Intro = () => {
   return (
     <>
       <section class="text-gray-400 bg-zinc-900 body-font">
-        <div class="overflow-hidden h-full w-full">
-          <img
-            alt="content"
-            class="object-cover object-center h-full w-full"
-            src="/images/sport.png"
-          />
+        <div
+          className="bg-top"
+          style={{
+            backgroundImage: `url("https://static.wixstatic.com/media/84770f_6197f6bd0a9c41788f15876c8dc8e73b~mv2.jpg/v1/fill/w_1903,h_953,al_l,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_6197f6bd0a9c41788f15876c8dc8e73b~mv2.jpg")`,
+            width: "1903",
+            height: "900px",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
+          <div className="flex flex-col items-center p-32">
+            <div className=" text-white text-8xl flex flex-col justify-center">
+              <h1 className=" w-2/4 flex flex-row justify-center p-20">
+                Le fitness devient ton quotidien
+              </h1>
+            </div>
+            <div className="w-1/5">
+              <button class="text-white bg-teal-500 border-0 focus:outline-none hover:bg-teal-600 rounded">
+                C'est Partie
+              </button>
+            </div>
+          </div>
         </div>
-        
-        <div class="container px-5 py-28 mx-auto">
+        <div class=" px-5 my-20 mx-auto ">
           <div class="flex flex-wrap -mx-4 -mb-10 text-center">
             <div class="sm:w-1/2 mb-10 px-4">
               <div class="rounded-lg overflow-hidden">
                 <img
                   alt="content"
-                  class="object-cover object-center h-full w-full"
-                  src="/images/image9.jpg"
+                  class="object-cover object-center"
+                  src="https://static.wixstatic.com/media/ad420a_d0ac34921aea4f98843f1b6798e5f50f~mv2_d_2339_1993_s_2.jpg/v1/fill/w_930,h_598,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/ad420a_d0ac34921aea4f98843f1b6798e5f50f~mv2_d_2339_1993_s_2.jpg"
                 />
               </div>
-              <h2 class="title-font text-2xl font-medium text-white mt-6 mb-3">
-                Just Take your time.
-              </h2>
             </div>
-            <div class="sm:w-1/2 mb-10 px-4">
-              <div class="rounded-lg overflow-hidden">
-                <img
-                  alt="content"
-                  class="object-cover object-center h-full w-full"
-                  src="/images/image2.jpg"
-                />
+            <div class="sm:w-1/2 mb-10 px-4 flex flex-row justify-center text-black bg-white rounded">
+              <div class="rounded-lg overflow-hidden w-1/2">
+               <h1 className="font-bold text-8xl text-black">
+               À propos de Base
+               </h1>
+               <p>
+               Suspendisse a ipsum vel risus facilisis posuere. Suspendisse potenti. Duis tincidunt mi purus, sed malesuada magna cursus id. Nunc sed suscipit ex. Pellentesque bibendum, erat ac elementum aliquam, nibh dolor mollis orci, in rutrum erat lectus ut ligula. <br /> Nunc quis ornare diam, ac pharetra tortor. Fusce augue ex, mollis ut turpis non, rutrum eleifend massa. Sed a luctus eros, sit amet rhoncus quam. <br /> Nam venenatis ante nec est porta interdum et eu est. Nunc vel congue felis, eu aliquam tortor. Maecenas gravida, magna at tincidunt blandit, ipsum tellus fringilla urna, id finibus mi nisl varius nisi. Duis mollis nulla nibh, ut porta magna pharetra vel.
+               </p>
               </div>
-              <h2 class="title-font text-2xl font-medium text-white mt-6 mb-3">
+              {/* <h2 class="title-font text-2xl font-medium text-white mt-6 mb-3">
                 À propos de Sportime
               </h2>
               <p class="leading-relaxed text-base">
                 Williamsburg occupy sustainable snackwave gochujang. Pinterest
                 cornhole brunch, slow-carb neutra irony.
               </p>
-              <button class="flex mx-auto mt-6 text-white bg-teal-500 border-0 py-2 px-5 focus:outline-none hover:bg-teal-600 rounded">
+              <button class=" flex mx-auto mt-6 text-white bg-teal-500 border-0 py-2 px-5 focus:outline-none hover:bg-teal-600 rounded">
                 Button
-              </button>
+              </button> */}
+            </div>
+            <div>
+              <h2 class="title-font text-2xl font-medium text-white mt-6 mb-3 ">
+                Nos exercices
+              </h2>
             </div>
           </div>
         </div>
