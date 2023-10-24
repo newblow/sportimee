@@ -44,7 +44,7 @@ const NavbarDesktop = () => {
           </div>
         </div>
         <div className="flex flex-row justify-center">
-          <button
+          <buttone
             type="button"
             className="flex flex-row justify-center pr-24"
             onClick={() => {
@@ -63,7 +63,7 @@ const NavbarDesktop = () => {
                 className="text-white hover:text-teal-500"
               />
             )}
-          </button>
+          </buttone>
           <div className="hover:text-teal-500">
             <div className="flex flex-row justify-end ">
               <div className="flex flex-row  ">

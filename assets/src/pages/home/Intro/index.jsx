@@ -4,11 +4,19 @@ import React from "react";
 const Intro = () => {
   return (
     <>
-      <section class="text-gray-400 bg-gray-900 body-font">
+      <section class="text-gray-400 bg-zinc-900 body-font">
+        <div class="overflow-hidden h-full w-full">
+          <img
+            alt="content"
+            class="object-cover object-center h-full w-full"
+            src="/images/sport.png"
+          />
+        </div>
+        
         <div class="container px-5 py-28 mx-auto">
           <div class="flex flex-wrap -mx-4 -mb-10 text-center">
             <div class="sm:w-1/2 mb-10 px-4">
-              <div class="rounded-lg h-64 overflow-hidden">
+              <div class="rounded-lg overflow-hidden">
                 <img
                   alt="content"
                   class="object-cover object-center h-full w-full"
@@ -20,7 +28,7 @@ const Intro = () => {
               </h2>
             </div>
             <div class="sm:w-1/2 mb-10 px-4">
-              <div class="rounded-lg h-64 overflow-hidden">
+              <div class="rounded-lg overflow-hidden">
                 <img
                   alt="content"
                   class="object-cover object-center h-full w-full"
@@ -42,11 +50,11 @@ const Intro = () => {
         </div>
       </section>
       {/* training */}
-      <section class="text-gray-400 bg-gray-900 body-font">
+      <section class="text-gray-400 bg-zinc-900 body-font">
         <div class="container px-5 py-24 mx-auto">
           <div class="flex flex-wrap -m-4">
             <div class="p-4 md:w-1/3">
-              <div class="h-full border-2 border-gray-800 rounded-lg overflow-hidden">
+              <div class="h-full border-2 border-gray-800 rounded-lg overflow-hidden hover:border-teal-500">
                 <img
                   class="lg:h-48 md:h-36 w-full object-cover object-center"
                   src="/images/image3.jpg"
@@ -113,7 +121,7 @@ const Intro = () => {
               </div>
             </div>
             <div class="p-4 md:w-1/3">
-              <div class="h-full border-2 border-gray-800 rounded-lg overflow-hidden">
+              <div class="h-full border-2 border-gray-800 rounded-lg overflow-hidden hover:border-teal-500">
                 <img
                   class="lg:h-48 md:h-36 w-full object-cover object-center"
                   src="/images/image5.jpg"
@@ -180,7 +188,7 @@ const Intro = () => {
               </div>
             </div>
             <div class="p-4 md:w-1/3">
-              <div class="h-full border-2 border-gray-800 rounded-lg overflow-hidden">
+              <div class="h-full border-2 border-gray-800 rounded-lg overflow-hidden hover:border-teal-500">
                 <img
                   class="lg:h-48 md:h-36 w-full object-cover object-center"
                   src="/images/image13.jpg"
@@ -247,7 +255,7 @@ const Intro = () => {
               </div>
             </div>
             <div class="p-4 md:w-1/3">
-              <div class="h-full border-2 border-gray-800 rounded-lg overflow-hidden">
+              <div class="h-full border-2 border-gray-800 rounded-lg overflow-hidden ">
                 <img
                   class="lg:h-48 md:h-36 w-full object-cover object-center"
                   src="/images/image12.jpg"

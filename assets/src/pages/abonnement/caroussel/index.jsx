@@ -1,26 +1,39 @@
-"use client";
 import React from "react";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-
+import Carousel from "better-react-carousel";
 
 const Caroussel = () => {
   return (
     <>
-      <Carousel autoPlay infiniteLoop showArrows={true}>
-        <div>
-          <img src="/logos/white-logo.svg" alt="" width={50} height={50} />
-          <p>Portfolio</p>
-        </div>
-        <div>
-          <img src="/" alt="" width={50} height={50} />
-          <p>Sportime</p>
-        </div>
-        <div>
-          <img src="/" alt="" width={50} height={50} />
-          <p>Devnet</p>
-        </div>
-      </Carousel>
+      <div className="h-full w-full">
+        <Carousel cols={4} rows={1} gap={10}  loop={true} autoplay={1000}>
+          <Carousel.Item>
+            <img width="100%" src="https://picsum.photos/800/600?random=1" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img width="100%" src="https://picsum.photos/800/600?random=2" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img width="100%" src="https://picsum.photos/800/600?random=3" />
+          </Carousel.Item>
+          <Carousel.Item>
+          <img width="100%" src="https://picsum.photos/800/600?random=4" />
+          </Carousel.Item>
+          <Carousel.Item>
+          <img width="100%" src="https://picsum.photos/800/600?random=5" />
+          </Carousel.Item>
+          <Carousel.Item>
+          <img width="100%" src="https://picsum.photos/800/600?random=3" />
+          </Carousel.Item>
+          <Carousel.Item>
+          <img width="100%" src="https://picsum.photos/800/600?random=2" />
+          </Carousel.Item>
+          <Carousel.Item>
+          <img width="100%" src="https://picsum.photos/800/600?random=1" />
+          </Carousel.Item>
+          
+          {/* ... */}
+        </Carousel>
+      </div>
     </>
   );
 };
