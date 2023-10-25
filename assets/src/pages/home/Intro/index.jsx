@@ -525,7 +525,7 @@ const Intro = () => {
             </button>
           </div>
           <div
-            className="bg-cover bg-scroll"
+            className="bg-cover bg-local"
             style={{
               backgroundImage: "url(https://static.wixstatic.com/media/ad420a_e4a3965bf9f343d5b45283c8b437f049~mv2_d_3346_5019_s_4_2.jpg/v1/fill/w_953,h_621,al_t,q_85,usm_0.66_1.00_0.01,enc_auto/ad420a_e4a3965bf9f343d5b45283c8b437f049~mv2_d_3346_5019_s_4_2.jpg)",
               backgroundRepeat: "no-repeat",
@@ -540,7 +540,7 @@ const Intro = () => {
 
         <div className="grid grid-cols-2 h-screen">
           <div
-            className="bg-cover bg-scroll"
+            className="bg-cover bg-fixed"
             style={{
               backgroundImage: "url(/images/image10.jpg)",
               backgroundRepeat: "no-repeat",
