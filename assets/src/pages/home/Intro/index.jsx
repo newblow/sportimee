@@ -482,6 +482,89 @@ const Intro = () => {
           </div>
         </div>
       </section>
+      <section>
+        <div class="flex flex-col text-center w-full bg-zinc-900 text-white p-10 ">
+          <h1 class="sm:text-4xl text-3xl font-medium title-font pb-2 ">
+            Rejoins Base et transforme ton corps et ton esprit
+          </h1>
+        </div>
+        <div className="grid grid-cols-2 h-screen">
+          <div className="bg-contain">
+            <video width="auto" height="auto" controls>
+              <source
+                src="https://video.wixstatic.com/video/ad420a_d36342da247848dbbf81c357052c1673/720p/mp4/file.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+          <div className="bg-contain">
+            <h2 class="title-font text-2xl font-medium text-white mt-6 mb-3">
+              À propos de Sportime
+            </h2>
+            <p class="leading-relaxed text-base">
+              Williamsburg occupy sustainable snackwave gochujang. Pinterest
+              cornhole brunch, slow-carb neutra irony.
+            </p>
+            <button class=" flex mx-auto mt-6 text-white bg-teal-500 border-0 py-2 px-5 focus:outline-none hover:bg-teal-600 rounded">
+              Button
+            </button>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-2 h-screen">
+          <div>
+            <h2 class="title-font text-2xl font-medium text-white mt-6 mb-3">
+              À propos de Sportime
+            </h2>
+            <p class="leading-relaxed text-base">
+              Williamsburg occupy sustainable snackwave gochujang. Pinterest
+              cornhole brunch, slow-carb neutra irony.
+            </p>
+            <button class=" flex mx-auto mt-6 text-white bg-teal-500 border-0 py-2 px-5 focus:outline-none hover:bg-teal-600 rounded">
+              Button
+            </button>
+          </div>
+          <div
+            className="bg-cover bg-scroll"
+            style={{
+              backgroundImage: "url(https://static.wixstatic.com/media/ad420a_e4a3965bf9f343d5b45283c8b437f049~mv2_d_3346_5019_s_4_2.jpg/v1/fill/w_953,h_621,al_t,q_85,usm_0.66_1.00_0.01,enc_auto/ad420a_e4a3965bf9f343d5b45283c8b437f049~mv2_d_3346_5019_s_4_2.jpg)",
+              backgroundRepeat: "no-repeat",
+            }}
+          >
+            {" "}
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
+              Hello world
+            </span>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-2 h-screen">
+          <div
+            className="bg-cover bg-scroll"
+            style={{
+              backgroundImage: "url(/images/image10.jpg)",
+              backgroundRepeat: "no-repeat",
+            }}
+          >
+            {" "}
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
+              Hello world
+            </span>
+          </div>
+          <div className="bg-contain">
+            <h2 class="title-font text-2xl font-medium text-white mt-6 mb-3">
+              À propos de Sportime
+            </h2>
+            <p class="leading-relaxed text-base">
+              Williamsburg occupy sustainable snackwave gochujang. Pinterest
+              cornhole brunch, slow-carb neutra irony.
+            </p>
+            <button class=" flex mx-auto mt-6 text-white bg-teal-500 border-0 py-2 px-5 focus:outline-none hover:bg-teal-600 rounded">
+              Button
+            </button>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
