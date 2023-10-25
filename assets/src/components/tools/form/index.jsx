@@ -48,7 +48,7 @@ const Form = () => {
         rows="8"
       ></textarea>
       <div className="flex flex-row justify-center py-6">
-        <div className="border-2 hover:text-orange-300 p-4  rounded">
+        <div className=" hover:text-orange-300 p-4 ">
           <button
             className=" transform:skew"
             type="button"

@@ -54,13 +54,15 @@ security:
   # Easy way to control access for large sections of your site
   # Note: Only the *first* access control that matches will be used
   access_control:
-    - { path: ^/dashboard, roles: ROLE_USER, methods: ["GET"]}
+    - { path: ^/dashboard, roles: ROLE_USER, methods: ["GET"] }
     - {
         path: ^/api/(courses),
         roles: ROLE_ADMIN,
         methods: ["POST", "PUT", "DELETE"],
       }
     - { path: ^/api/(login|token/refresh), roles: PUBLIC_ACCESS }
+    - { path: ^/api/(courses_reservations), roles: ROLE_ADMIN, methods: ["GET", "POST", "PUT", "DELETE"] }
+    - { path: ^/api/(users), roles: ROLE_ADMIN, methods: ["GET", "POST", "PUT", "DELETE"] }
 
 when@test:
   security:

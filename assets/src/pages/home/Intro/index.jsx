@@ -4,19 +4,19 @@ import React from "react";
 const Intro = () => {
   return (
     <>
-      <section class="text-gray-400 bg-zinc-900 body-font">
+      <section class="text-gray-400 bg-zinc-900 body-fon p-2">
         <div
-          className="bg-top"
+          className="bg-top "
           style={{
             backgroundImage: `url("https://static.wixstatic.com/media/84770f_6197f6bd0a9c41788f15876c8dc8e73b~mv2.jpg/v1/fill/w_1903,h_953,al_l,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_6197f6bd0a9c41788f15876c8dc8e73b~mv2.jpg")`,
             width: "1903",
-            height: "900px",
+            height: "956px",
             backgroundRepeat: "no-repeat",
           }}
         >
           <div className="flex flex-col items-center p-32">
             <div className=" text-white text-8xl flex flex-col justify-center">
-              <h1 className=" w-2/4 flex flex-row justify-center p-20">
+              <h1 className=" w-1/2 flex flex-row justify-center p-20">
                 Le fitness devient ton quotidien
               </h1>
             </div>
@@ -27,18 +27,18 @@ const Intro = () => {
             </div>
           </div>
         </div>
-        <div class=" px-5 my-20 mx-auto ">
-          <div class="flex flex-wrap -mx-4 -mb-10 text-center">
-            <div class="sm:w-1/2 mb-10 px-4">
-              <div class="rounded-lg overflow-hidden">
-                <img
-                  alt="content"
-                  class="object-cover object-center"
-                  src="https://static.wixstatic.com/media/ad420a_d0ac34921aea4f98843f1b6798e5f50f~mv2_d_2339_1993_s_2.jpg/v1/fill/w_930,h_598,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/ad420a_d0ac34921aea4f98843f1b6798e5f50f~mv2_d_2339_1993_s_2.jpg"
-                />
-              </div>
-            </div>
-            <div class="sm:w-1/2 mb-10 px-4 flex flex-row justify-center text-black bg-white rounded">
+        <div class="m-10">
+          <div class="flex flex-wrap  text-center">
+            <div
+              class="rounded-lg sm:w-1/2 px-4 "
+              style={{
+                backgroundImage: `url("https://static.wixstatic.com/media/ad420a_d0ac34921aea4f98843f1b6798e5f50f~mv2_d_2339_1993_s_2.jpg/v1/fill/w_930,h_598,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/ad420a_d0ac34921aea4f98843f1b6798e5f50f~mv2_d_2339_1993_s_2.jpg")`,
+                backgroundRepeat: "no-repeat",
+                height: "auto",
+              }}
+            ></div>
+
+            <div class="w-1/2 px-4 flex flex-row justify-center text-black bg-white rounded">
               <div class="rounded-lg overflow-hidden w-1/2">
                 <h1 className="font-bold text-8xl md:text-5xl text-black p-4">
                   À propos de Base
@@ -67,17 +67,15 @@ const Intro = () => {
                 Button
               </button> */}
             </div>
-            <div>
-              <h2 class="title-font text-2xl font-medium text-white mt-6 mb-3 ">
-                Nos exercices
-              </h2>
-            </div>
           </div>
         </div>
       </section>
       {/* training */}
       <section class="text-gray-400 bg-zinc-900 body-font">
-        <div class="container px-5 py-24 mx-auto">
+        <div className="flex flex-row justify-center p-8">
+          <h1 className="font-bold md:text-5xl">Training</h1>
+        </div>
+        <div class="container px-5  mx-auto">
           <div class="flex flex-wrap -m-4">
             <div class="p-4 md:w-1/3">
               <div class="h-full border-2 border-gray-800 rounded-lg overflow-hidden hover:border-teal-500">

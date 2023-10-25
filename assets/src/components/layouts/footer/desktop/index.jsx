@@ -5,7 +5,7 @@ const FooterDesktop = () => {
   return (
     <>
       <footer>
-        <div className="grid grid-cols-3 bg-teal-500">
+        <div className="grid grid-cols-3 bg-teal-800">
           <div className="m-10 border-r">
             <Form />
           </div>
@@ -33,10 +33,10 @@ const FooterDesktop = () => {
               +33 6.56.71.62.84 / +33 7.46.76.22.54
             </a>
             <div className="pt-16 ">
-              <div className="text-center border-2 mx-4 hover:text-orange-300 p-4 rounded">
+              <div className="text-center hover:text-orange-300">
                 <a href="/Training">
                   <button
-                    className="text-center"
+                    className=""
                     type="button"
                     onClick={() => SubmitForm()}
                   >
@@ -51,7 +51,7 @@ const FooterDesktop = () => {
               <div className="flex flex-row items-center">
                 <a className="" href={"https://localhost:8000/"}>
                   <img
-                    src="/images/logos/sp.svg"
+                    src="/images/logos/sp1.svg"
                     width={200}
                     height={80}
                     alt="AccueilSportime"
@@ -130,7 +130,7 @@ const FooterDesktop = () => {
           <p className="text-center pt-4 pb-5">© 2023 . Made by Devblow</p>
         </div>
 
-        <div className="bg-teal-500">
+        <div className="bg-teal-800">
           <br />
           <br />
         </div>

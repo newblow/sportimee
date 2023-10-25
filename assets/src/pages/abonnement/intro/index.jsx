@@ -6,13 +6,14 @@ const Intro = () => {
   return (
     <>
       <section>
-        <div class="overflow-hidden">
-          <img
-            alt="content"
-            class="object-cover object-center bg-cover w-full"
-            src="/images/image0.jpg"
-            width={'auto'}
-          />
+        <div class="overflow-hidden" className="bg-top bg-cover"
+          style={{
+            backgroundImage: `url("/images/image0.jpg")`,
+            width: "1903",
+            height: "956px",
+            backgroundRepeat: "no-repeat",
+          }}>
+          
         </div>
       </section>
       <section class="text-gray-400 bg-zinc-950 body-font overflow-hidden">
