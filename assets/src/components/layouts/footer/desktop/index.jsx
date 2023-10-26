@@ -5,8 +5,8 @@ const FooterDesktop = () => {
   return (
     <>
       <footer>
-        <div className="grid grid-cols-3 bg-teal-800">
-          <div className="m-10 border-r">
+        <div className="grid grid-cols-3 bg-zinc-900">
+          <div className="border-r">
             <Form />
           </div>
           <div className="flex flex-col items-center text-xl m-10">

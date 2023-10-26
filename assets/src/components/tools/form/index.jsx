@@ -7,7 +7,7 @@ const Form = () => {
 
   return (
     <form
-      className="flex flex-col text-black mx-20 blur-10"
+      className="flex flex-col text-black blur-10"
       action=""
       method="POST"
     >
@@ -19,31 +19,31 @@ const Form = () => {
             <input
               type="text"
               class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full md:w-[48%] mr-[2%]"
-              placeholder="Full Name"
+              placeholder="Nom / Prénom"
             />
             <input
               type="email"
-              class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full md:w-[48%] ml-[2%]"
+              class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-teal-500 transition ease-in-out duration-150 w-full md:w-[48%] ml-[2%]"
               placeholder="Email"
             />
             <input
               type="number"
-              class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full md:w-[48%] mr-[2%]"
-              placeholder="Phone Number"
+              class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-teal-500 transition ease-in-out duration-150 w-full md:w-[48%] mr-[2%]"
+              placeholder="Ville"
             />
             <input
               type="text"
-              class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full md:w-[48%] ml-[2%]"
-              placeholder="Company Name"
+              class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-teal-500 transition ease-in-out duration-150 w-full md:w-[48%] ml-[2%]"
+              placeholder="Code postal"
             />
             <input
               type="text"
-              class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full md:w-[48%] mr-[2%]"
-              placeholder="Job Title"
+              class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-teal-500 transition ease-in-out duration-150 w-full md:w-[48%] mr-[2%]"
+              placeholder="Portable"
             />
             <input
               type="date"
-              class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full md:w-[48%] ml-[2%]"
+              class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-teal-500 transition ease-in-out duration-150 w-full md:w-[48%] ml-[2%]"
               placeholder="Date of Birth"
             />
             <textarea
@@ -52,14 +52,14 @@ const Form = () => {
               placeholder="Message"
             ></textarea>
 
-            <button
-              type="submit"
-              class="bg-gradient-to-r from-indigo-500 to-blue-500 text-white font-bold py-2 px-4 rounded-md mt-4 hover:bg-indigo-600 hover:to-blue-600 transition ease-in-out duration-150"
-            >
-              Submit
-            </button>
           </form>
         </div>
+            <button
+              type="submit"
+              class="bg-gradient-to-r from-teal-500 to-red-500 text-white font-bold py-2 px-4 rounded-md mt-4 hover:bg-indigo-600 hover:to-teal-600 transition ease-in-out duration-150"
+            >
+              Envoyer
+            </button>
       </div>
     </form>
   );

@@ -44,8 +44,11 @@
     "react-burger-menu": "^3.0.9",
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
+    "react-parallax": "^3.5.1",
     "react-responsive-carousel": "^3.2.23",
-    "react-router-dom": "^6.15.0"
+    "react-router-dom": "^6.15.0",
+    "react-scroll-parallax": "^3.4.2",
+    "react-type-animation": "^3.2.0"
   },
   "name": "projet-perso",
   "version": "1.0.0",
