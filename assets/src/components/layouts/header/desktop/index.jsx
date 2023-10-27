@@ -20,28 +20,28 @@ const NavbarDesktop = () => {
           </a>
         </div>
         <div className="flex flex-col justify-center">
-          <div className="flex flex-row">
-            <div className="px-4 border-r shadow-md">
+          <ol className="flex flex-row">
+            <li className="px-4 border-r shadow-md">
               <a href="/" className="hover:text-teal-500">
                 Accueil
               </a>
-            </div>
-            <div className="px-4 border-r shadow-md">
+            </li>
+            <li className="px-4 border-r shadow-md">
               <a href="/about" className="hover:text-teal-500">
                 A propos
               </a>
-            </div>
-            <div className="px-4 border-r shadow-md">
+            </li>
+            <li className="px-4 border-r shadow-md">
               <a href="/training" className="pb-6 hover:text-teal-500">
                 Training
               </a>
-            </div>
-            <div className="px-4 shadow-md">
+            </li>
+            <li className="px-4 shadow-md">
               <a href="/abonnement" className="hover:text-teal-500">
                 Abonnement
               </a>
-            </div>
-          </div>
+            </li>
+          </ol>
         </div>
 
         <section className="grid grid-cols-3 items-center">

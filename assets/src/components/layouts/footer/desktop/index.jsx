@@ -118,20 +118,20 @@ const FooterDesktop = () => {
         </div>
 
         <div className="bg-black text-white text-lg pt-5">
-          <div className="flex flex-row justify-center">
-            <p className="mx-12 hover:text-teal-500 underline">
+          <ol className="flex flex-row justify-center">
+            <li className="mx-12 hover:text-teal-500 ">
               Mentions Legales
-            </p>
-            <p className="mx-10 hover:text-teal-500 underline">
+            </li>
+            <li className="mx-10 hover:text-teal-500 ">
               Politique en matière de cookies
-            </p>
-            <p className="mx-12 hover:text-teal-500 underline">
+            </li>
+            <li className="mx-12 hover:text-teal-500 ">
               Politique de confidentialité
-            </p>
-            <p className="mx-12 hover:text-teal-500 underline">
+            </li>
+            <li className="mx-12 hover:text-teal-500 ">
               Conditions d'utilisation
-            </p>
-          </div>
+            </li>
+          </ol>
           <p className="text-center pt-4 pb-5">© 2023 . Made by Devblow</p>
         </div>
 

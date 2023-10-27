@@ -7,7 +7,7 @@ const Intro = () => {
     <>
       <ParallaxProvider>
         {/* a propos */}
-        <section class="text-gray-400 bg-zinc-900 p-2">
+        <section class="text-gray-400 bg-zinc-900 pb-2">
           <div
             className=""
             style={{
@@ -31,20 +31,18 @@ const Intro = () => {
             </div>
           </div>
 
-          <div class="m-10">
-            <div class="flex flex-wrap text-center">
-              <div
-                class="rounded-lg w-1/2 px-4 "
-                style={{
-                  backgroundImage: `url("https://static.wixstatic.com/media/ad420a_d0ac34921aea4f98843f1b6798e5f50f~mv2_d_2339_1993_s_2.jpg/v1/fill/w_930,h_598,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/ad420a_d0ac34921aea4f98843f1b6798e5f50f~mv2_d_2339_1993_s_2.jpg")`,
-                  backgroundRepeat: "no-repeat",
-                  height: "auto",
-                }}
-              ></div>
-
-              <div class="w-1/2 px-4 flex flex-row justify-center text-black bg-white rounded">
-                <div class="rounded-lg overflow-hidden w-1/2">
-                  <h1 className="font-bold text-8xl md:text-5xl text-black p-4">
+          <div class="grid grid-cols-2 -mx-2 m-20">
+              <Parallax
+                className=" rounded sm:py-24 py-16 sm:px-10 px-6 relative bg-cover "
+                bgImage="https://static.wixstatic.com/media/ad420a_d0ac34921aea4f98843f1b6798e5f50f~mv2_d_2339_1993_s_2.jpg/v1/fill/w_930,h_598,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/ad420a_d0ac34921aea4f98843f1b6798e5f50f~mv2_d_2339_1993_s_2.jpgttps://dummyimage.com/542x460"
+                bgImageAlt="the cat"
+                strength={400}
+                bgImageSize="100%"
+              ></Parallax>
+            <div class="px-2 flex flex-row justify-center">
+              <div class="flex flex-row w-full rounded sm:py-24 py-16 sm:px-10 px-6 relative justify-center">
+                <div class="rounded-lg overflow-hidden w-1/2 flex flex-col justify-center">
+                  <h1 className="font-bold text-8xl md:text-5xl text-white p-4">
                     À propos de Base
                   </h1>
                   <p className="p-2">
@@ -60,26 +58,16 @@ const Intro = () => {
                     </button>
                   </div>
                 </div>
-                {/* <h2 class="title-font text-2xl font-medium text-white mt-6 mb-3">
-                À propos de Sportime
-              </h2>
-              <p class="leading-relaxed text-base">
-                Williamsburg occupy sustainable snackwave gochujang. Pinterest
-                cornhole brunch, slow-carb neutra irony.
-              </p>
-              <button class=" flex mx-auto mt-6 text-white bg-teal-500 border-0 py-2 px-5 focus:outline-none hover:bg-teal-600 rounded">
-                Button
-              </button> */}
               </div>
             </div>
           </div>
         </section>
         {/* training */}
         <section class="text-gray-400 bg-zinc-900 body-font">
-          <div className="flex flex-row justify-center p-8">
-            <h1 className="font-bold md:text-5xl">Training</h1>
+          <div className="flex flex-row justify-center p-5">
+            <h1 className="font-bold md:text-5xl text-white">Training</h1>
           </div>
-          <div class="container px-5  mx-auto">
+          <div class="container px-5 mx-auto p-10">
             <div class="flex flex-wrap -m-4">
               <div class="p-4 md:w-1/3 ">
                 <div class="h-full border-2 border-gray-800 rounded-lg overflow-hidden  hover:border-teal-500">
@@ -489,8 +477,8 @@ const Intro = () => {
         {/* motivation */}
         <section>
           <div class="flex flex-col text-center w-full bg-zinc-900 text-white p-10 ">
-            <h1 class="sm:text-4xl text-3xl font-medium title-font pb-2 ">
-              Rejoins Base et transforme ton corps et ton esprit
+            <h1 class="sm:text-4xl text-3xl font-bold md:text-5xl text-white p-4 ">
+              Rejoins Base et transforme <br /> ton corps et ton esprit
             </h1>
           </div>
           <div className="grid grid-cols-2 h-full w-full">
