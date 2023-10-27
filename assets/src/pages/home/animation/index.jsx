@@ -11,17 +11,17 @@ const Animation = () => {
     <TypeAnimation
       sequence={[
         // Same substring at the start will only be typed out once, initially
-        // "Moi c'est Bollo :)",
+        "Rejoins-nous :)",
         1000, // wait 1s before replacing "Mice" with "Hamsters"
-        "Rejoingner nous !",
-        1000,
+        
       ]}
       color="textColor"
       wrapper="span"
       speed={50}
       style={{ display: "inline-block" }}
-      className="text-xl text-center py-2 font-bungeeRegular"
+      className="text-4xl font-bold py-2 font-bungeeRegular"
       repeat={Infinity}
+      deletionSpeed={0}
     />
   );
 };
