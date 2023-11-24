@@ -6,15 +6,28 @@ const Intro = () => {
   return (
     <>
       <section>
-        <div class="overflow-hidden" className="bg-top bg-cover"
-          style={{
-            backgroundImage: `url("/images/image0.jpg")`,
-            width: "1903",
-            height: "956px",
-            backgroundRepeat: "no-repeat",
-          }}>
-          
+      <div
+        className="bg-top bg-cover"
+        style={{
+          backgroundImage: `url("/images/f2.jpg")`,
+          width: "1903",
+          height: "956px",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <div className="flex flex-col items-center p-20">
+          <div className=" text-white text-6xl flex flex-col justify-center">
+            <h1 className=" w-1/2 flex flex-row justify-center p-20">
+              Réveiller vous avec détermination et endormez vous avec satisfaction..
+            </h1>
+          </div>
+          <div className="w-1/5">
+            <button class=" bg-white border-0 focus:outline-none hover:bg-teal-600 rounded">
+              C'est Partie
+            </button>
+          </div>
         </div>
+      </div>
       </section>
       <section class="text-gray-400 bg-zinc-950 body-font overflow-hidden">
         <div class="container px-5 py-36 mx-auto">
@@ -438,6 +451,8 @@ const Intro = () => {
           <Carousel />
         </div>
       </section>
+
+      
     </>
   );
 };

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Trainingh from "../../home/trainingh";
 
 const Intro = () => {
   const [newReservation, setNewReservation] = useState({
@@ -28,31 +29,31 @@ const Intro = () => {
 
   return (
     <>
-      <div>
-        <div
-          className="hero min-h-screen"
-          style={{
-            backgroundImage:
-              "url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg)",
-          }}
-        >
-          <div className="hero-overlay bg-opacity-60"></div>
-          <div className="hero-content text-center text-neutral-content">
-            <div className="max-w-md">
-              <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-              <p className="mb-5">
-                Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                assumenda excepturi exercitationem quasi. In deleniti eaque aut
-                repudiandae et a id nisi.
-              </p>
-              <button className="btn btn-primary">Get Started</button>
-            </div>
+      <div
+        className="bg-top bg-cover"
+        style={{
+          backgroundImage: `url("https://www.uniquefitness.fr/data/uploads/2022/05/crosstraining.jpg")`,
+          width: "1903",
+          height: "956px",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <div className="flex flex-col items-center p-20">
+          <div className=" text-white text-6xl flex flex-col justify-center">
+            <h1 className=" w-1/2 flex flex-row justify-center p-20">
+              decouvrer notre histoire depuis ces débuts..
+            </h1>
+          </div>
+          <div className="w-1/5">
+            <button class=" bg-white border-0 focus:outline-none hover:bg-teal-600 rounded">
+              C'est Partie
+            </button>
           </div>
         </div>
       </div>
       <div className="mt-28 mb-10 mx-4">
         <div className="mb-4 p-4 w-7/12 lg:w-2/12">
-          <h2 className="font-bold">Training</h2>
+          <h1 className="font-bold">Reserver un cours</h1>
         </div>
         <input
           type="text"
@@ -114,6 +115,12 @@ const Intro = () => {
           })}
         </div> */}
       </div>
+      <section>
+        <div className="flex flex-row justify-center p-5">
+          <h1 className="font-bold md:text-5xl text-black">Training</h1>
+        </div>
+        <Trainingh />
+      </section>
     </>
   );
 };
