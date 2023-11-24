@@ -45,7 +45,7 @@ const Intro = () => {
               <h1 className="font-bold text-8xl md:text-5xl text-black p-4">
                 À propos de Sportime
               </h1>
-              <p className="p-2">
+              <p className="p-2 h-[800px]">
                 Suspendisse a ipsum vel risus facilisis posuere. Suspendisse
                 potenti. Duis tincidunt mi purus, sed malesuada magna cursus id.{" "}
                 <br />
@@ -61,7 +61,7 @@ const Intro = () => {
           </div>
         </div>
         <Parallax
-          bgImage="/images/image11.jpg"
+          bgImage="/images/zeze.jpg"
           bgImageAlt="the cat"
           strength={400}
           className=""
@@ -71,7 +71,7 @@ const Intro = () => {
       </div>
       <div className="grid grid-cols-2">
         <Parallax
-          bgImage="/images/blow.jpg"
+          bgImage="/images/img1.webp"
           bgImageAlt="the cat"
           strength={400}
           bgImageSize="100%"
@@ -79,7 +79,7 @@ const Intro = () => {
         <div className="flex flex-col justify-center p-28">
           <h1 class=" font-extrabold text-5xl p-5">À propos de Grumiaux bollo</h1>
           <h1 className="text-teal-500 p-5 text-2xl">Fondateur et coach sportif certifié</h1>
-          <p class="">
+          <p class="h-[800px]">
             Williamsburg occupy sustainable snackwave gochujang. Pinterest
             cornhole brunch, slow-carb neutra irony. Lorem ipsum dolor sit amet
             consectetur adipisicing elit. Facilis voluptas eaque culpa, quod

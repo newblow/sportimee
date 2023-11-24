@@ -7,13 +7,12 @@ const Intro = () => {
     <>
       <ParallaxProvider>
         {/* a propos */}
-        <section class="text-gray-400  pb-2">
+        <section class="text-gray-400 pb-2">
           <div
-            className=""
+            className="bg bg-cover"
             style={{
               backgroundImage: `url("https://static.wixstatic.com/media/84770f_6197f6bd0a9c41788f15876c8dc8e73b~mv2.jpg/v1/fill/w_1903,h_953,al_l,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_6197f6bd0a9c41788f15876c8dc8e73b~mv2.jpg")`,
-              width: "1903px",
-              height: "903px",
+              height: "956px",
               backgroundRepeat: "no-repeat",
             }}
           >
@@ -38,8 +37,9 @@ const Intro = () => {
               bgImageAlt="the cat"
               strength={400}
               bgImageSize="100%"
+            
             ></Parallax>
-            <div class="px-2 flex flex-row justify-center">
+            <div class="px-2 flex flex-row justify-center h-[800px]">
               <div class="flex flex-row w-full rounded sm:py-24 py-16 sm:px-10 px-6 relative justify-center">
                 <div class="rounded-lg overflow-hidden w-1/2 flex flex-col justify-center">
                   <h1 className="font-bold text-8xl md:text-5xl text-black p-4">
@@ -65,25 +65,32 @@ const Intro = () => {
         {/* training */}
         <section class="text-gray-400">
           <div className="flex flex-row justify-center p-5">
-            <h1 className="font-bold md:text-5xl text-black">Training</h1>
+            <h1 className="font-bold md:text-5xl text-black ">Training</h1>
           </div>
           <Trainingh />
         </section>
         {/* motivation */}
         <section>
-          <div class="flex flex-col text-center w-full p-10 ">
-            <h1 class="sm:text-4xl text-3xl font-bold md:text-5xl text-black  ">
+          <div class="flex flex-col text-center w-full p-6 ">
+            <h1 class="sm:text-4xl text-3xl font-bold md:text-5xl text-black p-12  ">
               Rejoins Base et transforme <br /> ton corps et ton esprit
             </h1>
+            <div class="flex flex-col">
+            <div class="h-1 bg-gray-800 rounded overflow-hidden ">
+              <div class="w-24 h-full bg-red-500"></div>
+            </div>
+            
           </div>
-          <div className="grid grid-cols-2 h-full w-full">
-            <video className="" width="auto" height="auto" autoPlay loop>
+          </div>
+          
+          <div className="grid grid-cols-2 w-full">
+            <video className="" width="auto" height="800px" autoPlay loop>
               <source
                 src="https://video.wixstatic.com/video/ad420a_d36342da247848dbbf81c357052c1673/720p/mp4/file.mp4"
                 type="video/mp4"
               />
             </video>
-            <div className=" flex flex-col justify-center p-28 ">
+            <div className=" flex flex-col justify-center p-28">
               <h1 class="font-bold text-5xl p-10">comunauté</h1>
               <p class="leading-relaxed text-base">
                 Williamsburg occupy sustainable snackwave gochujang. Pinterest
@@ -102,7 +109,7 @@ const Intro = () => {
           </div>
 
           <div className="grid grid-cols-2">
-            <div className=" flex flex-col justify-center p-28">
+            <div className=" flex flex-col justify-center p-28 h-[800px]">
               <h1 class="font-bold text-5xl p-10">Motivation</h1>
               <p class="leading-relaxed text-base">
                 Williamsburg occupy sustainable snackwave gochujang. Pinterest
@@ -123,6 +130,7 @@ const Intro = () => {
               bgImageAlt="the cat"
               strength={400}
               className=""
+              width={1000}
             ></Parallax>
           </div>
           <div className="grid grid-cols-2">
@@ -132,7 +140,7 @@ const Intro = () => {
               strength={400}
               bgImageSize="100%"
             ></Parallax>
-            <div className="flex flex-col justify-center p-28">
+            <div className="flex flex-col justify-center p-28 h-[800px]">
               <h1 class="font-bold text-5xl p-10">Résultats</h1>
               <p class="leading-relaxed text-base">
                 Williamsburg occupy sustainable snackwave gochujang. Pinterest
@@ -152,6 +160,21 @@ const Intro = () => {
         </section>
         {/* rejoins-nous */}
         <section>
+        <div class="flex flex-col">
+            <div class="h-1 bg-gray-800 rounded overflow-hidden">
+              <div class="w-24 h-full bg-red-500"></div>
+            </div>
+            <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+              <h1 class="sm:w-2/5 font-medium title-font text-2xl mb-2 sm:mb-0">
+                Choisiser votre vos entrainements
+              </h1>
+              <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">
+                Street art subway tile salvia four dollar toast bitters selfies
+                quinoa yuccie synth meditation iPhone intelligentsia prism tofu.
+                Viral gochujang bitters dreamcatcher.
+              </p>
+            </div>
+          </div>
           <div
             className="bg-cover bg-center flex flex-col justify-center m-6"
             style={{
