@@ -31,6 +31,8 @@
     "watch": "encore dev --watch"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.17",
+    "@heroicons/react": "^2.0.18",
     "aos": "^2.3.4",
     "axios": "^1.5.0",
     "bcryptjs-react": "^2.4.6",

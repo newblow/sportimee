@@ -28,7 +28,7 @@ const Intro = () => {
           </div>
           <div className="flex justify-center">
               <button class=" bg-white border-0 focus:outline-none hover:bg-teal-600 rounded flex justify-center">
-                Lance TOI
+                Lance Toi
               </button>
             </div>
         </div>

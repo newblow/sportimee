@@ -6,7 +6,7 @@ import React from "react";
 const Header = () => {
   return (
     <>
-    <div className="max-lg:hidden">
+    <div className="">
       <NavbarDesktop />
     </div>
     <div className="lg:hidden">
