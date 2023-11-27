@@ -1,62 +1,80 @@
 import React from "react";
 
-
 const Form = () => {
   const SubmitForm = () => {
     alert("formulaire envoyé");
   };
 
   return (
-    <form className="flex flex-col blur-10" action="" method="POST">
-      <div class="flex flex-col items-center justify-center">
-        <div class="w-full max-w-md  rounded-lg shadow-md p-6">
+    <section class="text-gray-600 body-font relative">
+      <div class="flex flex-col p-32">
+            <h1 className="font-bold md:text-5xl text-black flex justify-center p-10">
+            Contacter-nous
+            </h1>
+            <div class="h-1 bg-gray-800 rounded overflow-hidden">
+              <div class="w-24 h-full bg-red-500"></div>
+            </div>
+          </div>
+      <div class="container px-5 mx-auto">
 
-          <form class="flex flex-wrap">
-            <input
-              type="text"
-              class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full md:w-[48%] mr-[2%]"
-              placeholder="Nom / Prénom"
-            />
-            <input
-              type="email"
-              class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-teal-500 transition ease-in-out duration-150 w-full md:w-[48%] ml-[2%]"
-              placeholder="Email"
-            />
-            <input
-              type="text"
-              class="bg-gray-700 text-gray-200 border-0 rounded-md p2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-teal-500 transition ease-in-out duration-150 w-full md:w-[48%] ml-[2%]"
-              placeholder="Ville"
-            />
-            <input
-              type="text"
-              class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-teal-500 transition ease-in-out duration-150 w-full md:w-[48%] ml-[2%]"
-              placeholder="Code postal"
-            />
-            <input
-              type="text"
-              class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-teal-500 transition ease-in-out duration-150 w-full md:w-[48%] mr-[2%]"
-              placeholder="Portable"
-            />
-            <input
-              type="date"
-              class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-teal-500 transition ease-in-out duration-150 w-full md:w-[48%] ml-[2%]"
-              placeholder="Date of Birth"
-            />
-            <textarea
-              name="message"
-              class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-auto md:mb-auto md:w-full md:h-auto md:min-h-[100px] md:max-h-[100px] md:flex-grow md:flex-shrink md:flex-auto focus:bg-gray-md:focus:outline-none:focus:ring-blue-md:focus:border-transparent transition ease-in-out duration-fastest"
-              placeholder="Message"
-            ></textarea>
-          </form>
+        <div class="lg:w-1/2 md:w-2/3 mx-auto">
+          <div class="flex flex-wrap -m-2">
+            <div class="p-2 w-1/2">
+              <div class="relative">
+                <label for="name" class="leading-7 text-sm text-gray-600">
+                  Nom
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                />
+              </div>
+            </div>
+            <div class="p-2 w-1/2">
+              <div class="relative">
+                <label for="email" class="leading-7 text-sm text-gray-600">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                />
+              </div>
+            </div>
+            <div class="p-2 w-full">
+              <div class="relative">
+                <label for="message" class="leading-7 text-sm text-gray-600">
+                  Message
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                ></textarea>
+              </div>
+            </div>
+            <div class="p-2 w-full flex justify-center">
+            <button class="text-white bg-gradient-to-r from-teal-500 to-red-500 border-0 py-2 px-12 focus:outline-none rounded">
+              envoyer
+            </button>
+            </div>
+            <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
+              <a class="text-indigo-500">bollogmx@gmail.com</a>
+              <p class="leading-normal my-5">
+                30 boulevard du chevalier bayard
+                <br />
+                Meaux, 77100
+              </p>
+            
+            </div>
+          </div>
         </div>
-        <button
-          type="submit"
-          class="bg-gradient-to-r from-teal-500 to-red-500 text-white font-bold py-2 px-4 rounded-md mt-4 hover:bg-red-600 hover:to-teal-600 transition ease-in-out duration-150"
-        >
-          Envoyer
-        </button>
       </div>
-    </form>
+    </section>
   );
 };
 export default Form;

@@ -7,12 +7,13 @@ const Intro = () => {
     <>
       <ParallaxProvider>
         {/* a propos */}
-        <section class="text-gray-400 pb-2">
+        <section class="text-gray-400 ">
           <div
-            className="bg bg-cover"
+            className="bg bg-cover "
             style={{
               backgroundImage: `url("https://static.wixstatic.com/media/84770f_6197f6bd0a9c41788f15876c8dc8e73b~mv2.jpg/v1/fill/w_1903,h_953,al_l,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_6197f6bd0a9c41788f15876c8dc8e73b~mv2.jpg")`,
-              height: "956px",
+              height: "1150px",
+            
               backgroundRepeat: "no-repeat",
             }}
           >
@@ -37,7 +38,6 @@ const Intro = () => {
               bgImageAlt="the cat"
               strength={400}
               bgImageSize="100%"
-            
             ></Parallax>
             <div class="px-2 flex flex-row justify-center h-[800px]">
               <div class="flex flex-row w-full rounded sm:py-24 py-16 sm:px-10 px-6 relative justify-center">
@@ -50,9 +50,17 @@ const Intro = () => {
                     potenti. Duis tincidunt mi purus, sed malesuada magna cursus
                     id. <br />
                     Nunc sed suscipit ex. Pellentesque bibendum, erat ac
+                    elementum aliquam. Suspendisse a ipsum vel risus facilisis
+                    posuere. Suspendisse potenti. Duis tincidunt mi purus, sed
+                    malesuada magna cursus id. <br />
+                    Nunc sed suscipit ex. Pellentesque bibendum, erat ac
+                    elementum aliquam. Suspendisse a ipsum vel risus facilisis
+                    posuere. Suspendisse potenti. Duis tincidunt mi purus, sed
+                    malesuada magna cursus id. <br />
+                    Nunc sed suscipit ex. Pellentesque bibendum, erat ac
                     elementum aliquam.
                   </p>
-                  <div className="p-4">
+                  <div className="p-4 flex flex-row justify-center">
                     <button class="text-white bg-gradient-to-r from-teal-500 to-red-500 border-0 focus:outline-none hover:bg-teal-600 rounded">
                       Lire plus
                     </button>
@@ -64,25 +72,18 @@ const Intro = () => {
         </section>
         {/* training */}
         <section class="text-gray-400">
-          <div className="flex flex-row justify-center p-5">
-            <h1 className="font-bold md:text-5xl text-black ">Training</h1>
-          </div>
           <Trainingh />
         </section>
         {/* motivation */}
         <section>
-          <div class="flex flex-col text-center w-full p-6 ">
-            <h1 class="sm:text-4xl text-3xl font-bold md:text-5xl text-black p-12  ">
+          <div class="flex flex-col p-20">
+            <h1 className="font-bold md:text-5xl text-black flex justify-center text-center p-10">
               Rejoins Base et transforme <br /> ton corps et ton esprit
             </h1>
-            <div class="flex flex-col">
-            <div class="h-1 bg-gray-800 rounded overflow-hidden ">
+            {/* <div class="h-1 bg-gray-800 rounded overflow-hidden">
               <div class="w-24 h-full bg-red-500"></div>
-            </div>
-            
+            </div> */}
           </div>
-          </div>
-          
           <div className="grid grid-cols-2 w-full">
             <video className="" width="auto" height="800px" autoPlay loop>
               <source
@@ -159,22 +160,7 @@ const Intro = () => {
           </div>
         </section>
         {/* rejoins-nous */}
-        <section>
-        <div class="flex flex-col">
-            <div class="h-1 bg-gray-800 rounded overflow-hidden">
-              <div class="w-24 h-full bg-red-500"></div>
-            </div>
-            <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
-              <h1 class="sm:w-2/5 font-medium title-font text-2xl mb-2 sm:mb-0">
-                Choisiser votre vos entrainements
-              </h1>
-              <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">
-                Street art subway tile salvia four dollar toast bitters selfies
-                quinoa yuccie synth meditation iPhone intelligentsia prism tofu.
-                Viral gochujang bitters dreamcatcher.
-              </p>
-            </div>
-          </div>
+        <section>        
           <div
             className="bg-cover bg-center flex flex-col justify-center m-6"
             style={{
@@ -186,7 +172,6 @@ const Intro = () => {
           >
             <div class="text-white body-font flex flex-row justify-center">
               <div class=" px-4 py-24 mx-auto flex items-center md:flex-row flex-col">
-
                 <div class="flex md:ml-auto md:mr-0 mx-auto items-center flex-shrink-0 space-x-4">
                   <buttone class="bg-gradient-to-r from-teal-500 to-red-500 inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-700 hover:bg-opacity-50 focus:outline-none btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">
                     <svg

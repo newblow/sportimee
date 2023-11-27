@@ -1,5 +1,6 @@
 import React from "react";
 import { Parallax } from "react-parallax";
+import Form from "../../../components/tools/form";
 
 const Intro = () => {
   return (
@@ -20,8 +21,7 @@ const Intro = () => {
         className="bg-top bg-cover"
         style={{
           backgroundImage: `url("/images/f1.jpg")`,
-          width: "1903",
-          height: "956px",
+          height: "1150px",
           backgroundRepeat: "no-repeat",
         }}
       >
@@ -39,20 +39,28 @@ const Intro = () => {
         </div>
       </div>
       <div className="grid grid-cols-2">
-        <div class="px-2 flex flex-row justify-center">
+        <div class="px-2 flex flex-row justify-center h-[1000px]">
           <div class="flex flex-row w-full rounded sm:py-24 py-16 sm:px-10 px-6 relative justify-center">
             <div class="rounded-lg overflow-hidden w-1/2 flex flex-col justify-center">
               <h1 className="font-bold text-8xl md:text-5xl text-black p-4">
                 À propos de Sportime
               </h1>
-              <p className="p-2 h-[800px]">
+              <p className="p-2">
                 Suspendisse a ipsum vel risus facilisis posuere. Suspendisse
                 potenti. Duis tincidunt mi purus, sed malesuada magna cursus id.{" "}
-                <br />
+                <br /> <br />
+                Nunc sed suscipit ex. Pellentesque bibendum, erat ac elementum
+                aliquam.
+                Suspendisse a ipsum vel risus facilisis posuere. Suspendisse
+                potenti. Duis tincidunt mi purus, sed malesuada magna cursus id.{" "}
+                <br /> <br />
+                Nunc sed suscipit ex. Pellentesque bibendum, erat ac elementum
+                aliquam.
+                <br /> <br />
                 Nunc sed suscipit ex. Pellentesque bibendum, erat ac elementum
                 aliquam.
               </p>
-              <div className="p-4">
+              <div className="p-4 flex justify-center">
                 <button class="text-white bg-gradient-to-r from-teal-500 to-red-500 border-0 focus:outline-none hover:bg-teal-600 rounded">
                   Lire plus
                 </button>
@@ -76,10 +84,10 @@ const Intro = () => {
           strength={400}
           bgImageSize="100%"
         ></Parallax>
-        <div className="flex flex-col justify-center p-28">
+        <div className="flex flex-col justify-center p-28 h-[1000px]">
           <h1 class=" font-extrabold text-5xl p-5">À propos de Grumiaux bollo</h1>
           <h1 className="text-teal-500 p-5 text-2xl">Fondateur et coach sportif certifié</h1>
-          <p class="h-[800px]">
+          <p>
             Williamsburg occupy sustainable snackwave gochujang. Pinterest
             cornhole brunch, slow-carb neutra irony. Lorem ipsum dolor sit amet
             consectetur adipisicing elit. Facilis voluptas eaque culpa, quod
@@ -92,7 +100,11 @@ const Intro = () => {
             </button>
           </div>
         </div>
+       
       </div>
+      <div>
+          <Form/>
+        </div>
     </>
   );
 };
