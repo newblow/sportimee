@@ -1,458 +1,67 @@
 import React from "react";
 import Carousel from "../caroussel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Price from "../price";
 
 const Intro = () => {
   return (
     <>
       <section>
-      <div
-        className="bg-top bg-cover"
-        style={{
-          backgroundImage: `url("/images/f2.jpg")`,
-          width: "1903",
-          height: "956px",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
-        <div className="flex flex-col items-center p-20">
-          <div className=" text-white text-6xl flex flex-col justify-center">
-            <h1 className=" w-1/2 flex flex-row justify-center p-20">
-              Réveiller vous avec détermination et endormez vous avec satisfaction..
-            </h1>
+        <div
+          className="bg-top bg-cover"
+          style={{
+            backgroundImage: `url("/images/f2.jpg")`,
+
+            height: "1155px",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
+          <div className="flex flex-col justify-center p-20">
+            <div className=" text-white text-6xl flex flex-col">
+              <h1 className="p-60 uppercase">
+                Commence ou tu es <br />
+                Utilise ce que tu as
+                <br /> Fais ce que tu peux
+              </h1>
+            </div>
+            
           </div>
-          <div className="w-1/5">
-            <button class=" bg-white border-0 focus:outline-none hover:bg-teal-600 rounded">
-              C'est Partie
-            </button>
-          </div>
+          <div className="flex justify-center">
+              <button class=" bg-white border-0 focus:outline-none hover:bg-teal-600 rounded flex justify-center">
+                Lance TOI
+              </button>
+            </div>
         </div>
-      </div>
       </section>
-      <section class="text-gray-400 bg-zinc-950 body-font overflow-hidden">
-        <div class="container px-5 py-36 mx-auto">
-          <div class="flex flex-col text-center w-full mb-20">
-            <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2 text-white">
-              Choisisser votre formule
-            </h1>
-            {/* <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical.</p> */}
-            <div class="flex mx-auto border-2 border-teal-500 rounded overflow-hidden mt-6">
-              <button class="py-1 px-4 bg-teal-500 text-white focus:outline-none">
-                Monthly
-              </button>
-              <button class="py-1 px-4 text-gray-300 focus:outline-none">
-                Annually
-              </button>
-            </div>
+      <section class=" bg-zinc-950 body-font overflow-hidden">
+        <div class="flex flex-col p-20">
+          <h1 className="font-bold md:text-5xl flex text-white justify-center p-20">
+            Training
+          </h1>
+          <div class="h-1 bg-gray-800 rounded overflow-hidden">
+            <div class="w-96 h-full bg-teal-500"></div>
           </div>
-          <div class="flex flex-wrap -m-4">
-            <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
-              <div class="h-full p-6 rounded-lg border-2 border-gray-700 flex flex-col relative overflow-hidden hover:border-teal-400">
-                <h2 class="text-sm tracking-widest text-gray-400 title-font mb-1 font-medium">
-                  DECOUVERTE
-                </h2>
-                <h1 class="text-5xl pb-4 mb-4 border-b border-gray-800 leading-none">
-                  Free
-                </h1>
-                <p class="flex items-center text-gray-400 mb-2">
-                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2.5"
-                      class="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  Vexillologist pitchfork
-                </p>
-                <p class="flex items-center text-gray-400 mb-2">
-                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2.5"
-                      class="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  Tumeric plaid portland
-                </p>
-                <p class="flex items-center text-gray-400 mb-6">
-                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2.5"
-                      class="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  Mixtape chillwave tumeric
-                </p>
-                <button class="flex items-center mt-auto text-white bg-gray-800 border-0 py-2 px-4 w-full focus:outline-none hover:bg-teal-500 rounded ">
-                  Ma formule
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    class="w-4 h-4 ml-auto"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                  </svg>
-                </button>
-                <p class="text-xs text-gray-400 mt-3">
-                  Literally you probably haven't heard of them jean shorts.
-                </p>
-              </div>
-            </div>
-            <div class="p-4 xl:w-1/4 md:w-1/2 w-full ">
-              <div class="h-full p-6 rounded-lg border-2 border-gray-500 flex flex-col relative overflow-hidden hover:border-teal-500">
-                <span class="bg-teal-500 text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">
-                  BON PLAN
-                </span>
-                <h2 class="text-sm tracking-widest text-gray-400 title-font mb-1 font-medium">
-                  RELAX
-                </h2>
-                <h1 class="text-5xl text-white leading-none flex items-center pb-4 mb-4 border-b border-gray-800">
-                  <span>$25</span>
-                  <span class="text-lg ml-1 font-normal text-gray-400">
-                    /mois
-                  </span>
-                </h1>
-                <p class="flex items-center text-gray-400 mb-2">
-                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2.5"
-                      class="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  Vexillologist pitchfork
-                </p>
-                <p class="flex items-center text-gray-400 mb-2">
-                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2.5"
-                      class="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  Tumeric plaid portland
-                </p>
-                <p class="flex items-center text-gray-400 mb-2">
-                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2.5"
-                      class="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  Hexagon neutra unicorn
-                </p>
-                <p class="flex items-center text-gray-400 mb-6">
-                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2.5"
-                      class="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  Mixtape chillwave tumeric
-                </p>
-                <button class="flex items-center mt-auto text-white bg-gray-800 border-0 py-2 px-4 w-full focus:outline-none hover:bg-teal-600 rounded">
-                  Choisir
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    class="w-4 h-4 ml-auto"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                  </svg>
-                </button>
-                <p class="text-xs text-gray-400 mt-3">
-                  Literally you probably haven't heard of them jean shorts.
-                </p>
-              </div>
-            </div>
-            <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
-              <div class="h-full p-6 rounded-lg border-2 border-gray-700 flex flex-col relative overflow-hidden hover:border-teal-500">
-                <h2 class="text-sm tracking-widest text-gray-400 title-font mb-1 font-medium">
-                  SPORTIF
-                </h2>
-                <h1 class="text-5xl text-white leading-none flex items-center pb-4 mb-4 border-b border-gray-800">
-                  <span>$50</span>
-                  <span class="text-lg ml-1 font-normal text-gray-400">
-                    /mois
-                  </span>
-                </h1>
-                <p class="flex items-center text-gray-400 mb-2">
-                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2.5"
-                      class="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  Vexillologist pitchfork
-                </p>
-                <p class="flex items-center text-gray-400 mb-2">
-                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2.5"
-                      class="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  Tumeric plaid portland
-                </p>
-                <p class="flex items-center text-gray-400 mb-2">
-                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2.5"
-                      class="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  Hexagon neutra unicorn
-                </p>
-                <p class="flex items-center text-gray-400 mb-2">
-                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2.5"
-                      class="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  Vexillologist pitchfork
-                </p>
-                <p class="flex items-center text-gray-400 mb-6">
-                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2.5"
-                      class="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  Mixtape chillwave tumeric
-                </p>
-                <button class="flex items-center mt-auto text-white bg-gray-800 border-0 py-2 px-4 w-full focus:outline-none rounded hover:bg-teal-500">
-                  Choisir
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    class="w-4 h-4 ml-auto"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                  </svg>
-                </button>
-                <p class="text-xs text-gray-400 mt-3">
-                  Literally you probably haven't heard of them jean shorts.
-                </p>
-              </div>
-            </div>
-            <div class="p-4 xl:w-1/4 md:w-1/2 w-full ">
-              <div class="h-full p-6 rounded-lg border-2 border-gray-700 flex flex-col relative overflow-hidden hover:border-teal-500">
-                <h2 class="text-sm tracking-widest text-gray-400 title-font mb-1 font-medium">
-                  EXPERT
-                </h2>
-                <h1 class="text-5xl text-white leading-none flex items-center pb-4 mb-4 border-b border-gray-800">
-                  <span>$70</span>
-                  <span class="text-lg ml-1 font-normal text-gray-400">
-                    /mois
-                  </span>
-                </h1>
-                <p class="flex items-center text-gray-400 mb-2">
-                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2.5"
-                      class="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  Vexillologist pitchfork
-                </p>
-                <p class="flex items-center text-gray-400 mb-2">
-                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2.5"
-                      class="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  Tumeric plaid portland
-                </p>
-                <p class="flex items-center text-gray-400 mb-2">
-                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2.5"
-                      class="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  Hexagon neutra unicorn
-                </p>
-                <p class="flex items-center text-gray-400 mb-2">
-                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2.5"
-                      class="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  Vexillologist pitchfork
-                </p>
-                <p class="flex items-center text-gray-400 mb-6">
-                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2.5"
-                      class="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  Mixtape chillwave tumeric
-                </p>
-                <button class="flex items-center mt-auto text-white bg-gray-800 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-700 rounded">
-                  Choisir
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    class="w-4 h-4 ml-auto"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                  </svg>
-                </button>
-                <p class="text-xs text-gray-400 mt-3">
-                  Literally you probably haven't heard of them jean shorts.
-                </p>
-              </div>
-            </div>
+          <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+            <h1 class="sm:w-2/5 font-medium title-font text-2xl mb-2 sm:mb-0 text-white">
+              Choisiser votre formule
+            </h1>
           </div>
         </div>
+        <Price />
       </section>
       <section class="text-white bg-zinc-950 body-font">
-        <div class="flex flex-col text-center w-full mb-20">
-          <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2">
-            Ils nous font confiances
+        <div class="flex flex-col p-20">
+          <h1 className="font-bold md:text-5xl flex text-white justify-center p-20">
+            Ils nous font confiance..
           </h1>
+          <div class="h-1 bg-gray-800 rounded overflow-hidden">
+            <div class="w-96 h-full bg-teal-500"></div>
+          </div>
         </div>
         <div className="bg-zinc-950 pb-40">
           <Carousel />
         </div>
       </section>
-
-      
     </>
   );
 };

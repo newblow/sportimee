@@ -12,7 +12,7 @@ const Intro = () => {
             className="bg bg-cover "
             style={{
               backgroundImage: `url("https://static.wixstatic.com/media/84770f_6197f6bd0a9c41788f15876c8dc8e73b~mv2.jpg/v1/fill/w_1903,h_953,al_l,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_6197f6bd0a9c41788f15876c8dc8e73b~mv2.jpg")`,
-              height: "1150px",
+              height: "1155px",
             
               backgroundRepeat: "no-repeat",
             }}
@@ -129,7 +129,7 @@ const Intro = () => {
             <Parallax
               bgImage="https://static.wixstatic.com/media/ad420a_e4a3965bf9f343d5b45283c8b437f049~mv2_d_3346_5019_s_4_2.jpg/v1/fill/w_633,h_621,al_t,q_85,usm_0.66_1.00_0.01,enc_auto/ad420a_e4a3965bf9f343d5b45283c8b437f049~mv2_d_3346_5019_s_4_2.jpg"
               bgImageAlt="the cat"
-              strength={400}
+              strength={1000}
               className=""
               width={1000}
             ></Parallax>
@@ -138,7 +138,7 @@ const Intro = () => {
             <Parallax
               bgImage="https://scontent-cdg4-2.cdninstagram.com/v/t39.30808-6/367950873_18377367907027855_5758731023433582287_n.jpg?stp=dst-jpg_e15&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE4MDAuc2RyIn0&_nc_ht=scontent-cdg4-2.cdninstagram.com&_nc_cat=107&_nc_ohc=xRuQIvwd7gcAX-nQV62&edm=ABmJApAAAAAA&ccb=7-5&ig_cache_key=MzE3MDEwNTE4MDAzNzExODg4Nw%3D%3D.2-ccb7-5&oh=00_AfB-2jFSnZj2grLY84HTzaiMhT2jodVh_1u7kK-bv9o1MQ&oe=6565B306&_nc_sid=b41fef"
               bgImageAlt="the cat"
-              strength={400}
+              strength={1000}
               bgImageSize="100%"
             ></Parallax>
             <div className="flex flex-col justify-center p-28 h-[800px]">
@@ -165,7 +165,6 @@ const Intro = () => {
             className="bg-cover bg-center flex flex-col justify-center m-6"
             style={{
               backgroundImage: `url("https://static.wixstatic.com/media/ad420a_a4005babf5224625a8ce3ddaf7fbd913~mv2_d_4608_2592_s_4_2.jpg/v1/fill/w_1263,h_655,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/ad420")`,
-              width: "",
               height: "300px",
               backgroundRepeat: "no-repeat",
             }}

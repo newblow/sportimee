@@ -16,28 +16,28 @@ const Intro = () => {
           fetchpriority="high"
         ></img>
       </div> */}
-
-      <div
-        className="bg-top bg-cover"
-        style={{
-          backgroundImage: `url("/images/f1.jpg")`,
-          height: "1150px",
-          backgroundRepeat: "no-repeat",
-        }}
+      <Parallax
+        bgImage="/images/image9.jpg"
+        bgImageAlt="the cat"
+        strength={1000}
+        style={{ height: "1154px", background: 'center',}}
+        className="bg-center"
+        
+        
       >
-        <div className="flex flex-col items-center p-20">
+        <div className="flex flex-col justify-center p-60">
           <div className=" text-white text-6xl flex flex-col justify-center">
-            <h1 className=" w-1/2 flex flex-row justify-center p-20">
+            <h1 className=" flex flex-row justify-end p-20 w-1/2">
               decouvrer notre histoire depuis ces débuts..
             </h1>
           </div>
-          <div className="w-1/5">
+          <div className="w-1/5 flex flex-row justify-center">
             <button class=" bg-white border-0 focus:outline-none hover:bg-teal-600 rounded">
-              C'est Partie
+              Découvrir
             </button>
           </div>
         </div>
-      </div>
+      </Parallax>
       <div className="grid grid-cols-2">
         <div class="px-2 flex flex-row justify-center h-[1000px]">
           <div class="flex flex-row w-full rounded sm:py-24 py-16 sm:px-10 px-6 relative justify-center">
@@ -50,10 +50,9 @@ const Intro = () => {
                 potenti. Duis tincidunt mi purus, sed malesuada magna cursus id.{" "}
                 <br /> <br />
                 Nunc sed suscipit ex. Pellentesque bibendum, erat ac elementum
-                aliquam.
-                Suspendisse a ipsum vel risus facilisis posuere. Suspendisse
-                potenti. Duis tincidunt mi purus, sed malesuada magna cursus id.{" "}
-                <br /> <br />
+                aliquam. Suspendisse a ipsum vel risus facilisis posuere.
+                Suspendisse potenti. Duis tincidunt mi purus, sed malesuada
+                magna cursus id. <br /> <br />
                 Nunc sed suscipit ex. Pellentesque bibendum, erat ac elementum
                 aliquam.
                 <br /> <br />
@@ -71,22 +70,25 @@ const Intro = () => {
         <Parallax
           bgImage="/images/zeze.jpg"
           bgImageAlt="the cat"
-          strength={400}
+          strength={1000}
           className=""
           bgImageSize="100%"
-
         ></Parallax>
       </div>
       <div className="grid grid-cols-2">
         <Parallax
           bgImage="/images/img1.webp"
           bgImageAlt="the cat"
-          strength={400}
+          strength={1000}
           bgImageSize="100%"
         ></Parallax>
         <div className="flex flex-col justify-center p-28 h-[1000px]">
-          <h1 class=" font-extrabold text-5xl p-5">À propos de Grumiaux bollo</h1>
-          <h1 className="text-teal-500 p-5 text-2xl">Fondateur et coach sportif certifié</h1>
+          <h1 class=" font-extrabold text-5xl p-5">
+            À propos de Grumiaux bollo
+          </h1>
+          <h1 className="text-teal-500 p-5 text-2xl">
+            Fondateur et coach sportif certifié
+          </h1>
           <p>
             Williamsburg occupy sustainable snackwave gochujang. Pinterest
             cornhole brunch, slow-carb neutra irony. Lorem ipsum dolor sit amet
@@ -100,11 +102,10 @@ const Intro = () => {
             </button>
           </div>
         </div>
-       
       </div>
       <div>
-          <Form/>
-        </div>
+        <Form />
+      </div>
     </>
   );
 };

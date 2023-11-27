@@ -6,7 +6,7 @@ const Form = () => {
   };
 
   return (
-    <section class="text-gray-600 body-font relative">
+    <section class="text-gray-600 body-font relative bg">
       <div class="flex flex-col p-32">
             <h1 className="font-bold md:text-5xl text-black flex justify-center p-10">
             Contacter-nous
@@ -58,7 +58,7 @@ const Form = () => {
               </div>
             </div>
             <div class="p-2 w-full flex justify-center">
-            <button class="text-white bg-gradient-to-r from-teal-500 to-red-500 border-0 py-2 px-12 focus:outline-none rounded">
+            <button class="text-white bg-gradient-to-r from-teal-500 to-red-500 border-0 py-2 px-20 focus:outline-none rounded">
               envoyer
             </button>
             </div>

@@ -39,8 +39,8 @@ const Intro = () => {
       >
         <div className="flex flex-col items-center p-20">
           <div className=" text-white text-6xl flex flex-col justify-center">
-            <h1 className=" w-1/2 flex flex-row justify-center p-20">
-              decouvrer notre histoire depuis ces débuts..
+            <h1 className=" w-3/6 flex flex-row justify-center p-60">
+            Réveiller vous avec détermination et endormez vous avec satisfaction..
             </h1>
           </div>
           <div className="w-1/5">
