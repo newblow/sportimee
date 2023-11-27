@@ -6,24 +6,21 @@ const Intro = () => {
   return (
     <>
       {/* <div className=" ">
-        <img
-          src="https://static.wixstatic.com/media/84770f_6197f6bd0a9c41788f15876c8dc8e73b~mv2.jpg/v1/fill/w_1903,h_953,al_l,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_6197f6bd0a9c41788f15876c8dc8e73b~mv2.jpg"
-          className="w-full bg-top bg-origin-content "
-          alt
-          width="980"
-          height="953"
-          style={{ width: "1903", height: "900px" }}
-          fetchpriority="high"
-        ></img>
-      </div> */}
+          <img
+            src="https://static.wixstatic.com/media/84770f_6197f6bd0a9c41788f15876c8dc8e73b~mv2.jpg/v1/fill/w_1903,h_953,al_l,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_6197f6bd0a9c41788f15876c8dc8e73b~mv2.jpg"
+            className="w-full bg-top bg-origin-content "
+            alt
+            style={{ width: "1263", height: "953px", objectfit: "cover" }}
+            fetchpriority="high"
+          ></img>
+        </div> */}
+
       <Parallax
-        bgImage="/images/image9.jpg"
+        bgImage="https://static.wixstatic.com/media/84770f_6197f6bd0a9c41788f15876c8dc8e73b~mv2.jpg/v1/fill/w_1903,h_953,al_l,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_6197f6bd0a9c41788f15876c8dc8e73b~mv2.jpg"
         bgImageAlt="the cat"
         strength={1000}
-        style={{ height: "1154px", background: 'center',}}
-        className="bg-center"
-        
-        
+        style={{ height: "1154px", width: "1263.33px" }}
+        className="w-full"
       >
         <div className="flex flex-col justify-center p-60">
           <div className=" text-white text-6xl flex flex-col justify-center">

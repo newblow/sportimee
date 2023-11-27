@@ -9,12 +9,11 @@ const Intro = () => {
         {/* a propos */}
         <section class="text-gray-400 ">
           <div
-            className="bg bg-cover "
+            className=""
             style={{
               backgroundImage: `url("https://static.wixstatic.com/media/84770f_6197f6bd0a9c41788f15876c8dc8e73b~mv2.jpg/v1/fill/w_1903,h_953,al_l,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_6197f6bd0a9c41788f15876c8dc8e73b~mv2.jpg")`,
               height: "1155px",
-            
-              backgroundRepeat: "no-repeat",
+              width: "1263.33px"
             }}
           >
             <div className="flex flex-col items-center p-32">
@@ -160,7 +159,7 @@ const Intro = () => {
           </div>
         </section>
         {/* rejoins-nous */}
-        <section>        
+        <section>
           <div
             className="bg-cover bg-center flex flex-col justify-center m-6"
             style={{

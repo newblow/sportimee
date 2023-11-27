@@ -9,11 +9,9 @@ const NavbarDesktop = [
   { name: "Training", href: "./training", current: false },
   { name: "Abonnement", href: "./abonnement", current: false },
 ];
-
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
-
 export default function Example() {
   return (
     <Disclosure as="nav" className="bg-gray-800">
