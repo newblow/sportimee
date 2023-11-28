@@ -2,18 +2,38 @@ import React from "react";
 import { ParallaxProvider } from "react-scroll-parallax";
 import { Parallax } from "react-parallax";
 import Trainingh from "../trainingh";
+const imageSrc =
+  "https://static.wixstatic.com/media/84770f_6197f6bd0a9c41788f15876c8dc8e73b~mv2.jpg/v1/fill/w_2379,h_953,al_l,q_90,usm_0.66_1.00_0.01,enc_auto/84770f_6197f6bd0a9c41788f15876c8dc8e73b~mv2.jpg";
 const Intro = () => {
   return (
     <>
       <ParallaxProvider>
         {/* a propos */}
         <section class="text-gray-400 ">
-          <div
+          <Parallax bgImage={imageSrc} strength={700} >
+            <div
+              className=""
+              style={{ height: "650px", top: "0px", objectFit:'scale-down'}}
+            >
+              {" "}
+              {/* Ajustez la hauteur selon vos besoins */}
+              <div style={{ textAlign: "center", padding: "200px 0" }}>
+                <h1 style={{ color: "white" }}>
+                  decouvrer notre histoire depuis ces débuts..
+                </h1>
+              </div>
+              <div className="w-1/5 flex flex-row justify-center">
+                <button class=" bg-white border-0 focus:outline-none hover:bg-teal-600 rounded">
+                  Découvrir
+                </button>
+              </div>
+            </div>
+          </Parallax>
+          {/* <div
             className=""
             style={{
               backgroundImage: `url("https://static.wixstatic.com/media/84770f_6197f6bd0a9c41788f15876c8dc8e73b~mv2.jpg/v1/fill/w_1903,h_953,al_l,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_6197f6bd0a9c41788f15876c8dc8e73b~mv2.jpg")`,
               height: "1155px",
-              width: "1263.33px"
             }}
           >
             <div className="flex flex-col items-center p-32">
@@ -28,7 +48,7 @@ const Intro = () => {
                 </button>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div class="grid grid-cols-2 -mx-2 m-20">
             <Parallax

@@ -1,40 +1,40 @@
 import React from "react";
-import { Parallax } from "react-parallax";
+import { Parallax,} from "react-parallax";
 import Form from "../../../components/tools/form";
 
 const Intro = () => {
+  const imageSrc = '/images/f1.jpg';
   return (
     <>
-      {/* <div className=" ">
-          <img
-            src="https://static.wixstatic.com/media/84770f_6197f6bd0a9c41788f15876c8dc8e73b~mv2.jpg/v1/fill/w_1903,h_953,al_l,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_6197f6bd0a9c41788f15876c8dc8e73b~mv2.jpg"
-            className="w-full bg-top bg-origin-content "
-            alt
-            style={{ width: "1263", height: "953px", objectfit: "cover" }}
-            fetchpriority="high"
-          ></img>
-        </div> */}
-
-      <Parallax
-        bgImage="https://static.wixstatic.com/media/84770f_6197f6bd0a9c41788f15876c8dc8e73b~mv2.jpg/v1/fill/w_1903,h_953,al_l,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_6197f6bd0a9c41788f15876c8dc8e73b~mv2.jpg"
-        bgImageAlt="the cat"
-        strength={1000}
-        style={{ height: "1154px", width: "1263.33px" }}
-        className="w-full"
-      >
-        <div className="flex flex-col justify-center p-60">
-          <div className=" text-white text-6xl flex flex-col justify-center">
-            <h1 className=" flex flex-row justify-end p-20 w-1/2">
-              decouvrer notre histoire depuis ces débuts..
-            </h1>
-          </div>
-          <div className="w-1/5 flex flex-row justify-center">
+    
+    <Parallax bgImage={imageSrc} strength={700}>
+      <div className="" style={{ height: '650px', top:'0px', backgroundSize: 'cover' }}> {/* Ajustez la hauteur selon vos besoins */}
+        <div style={{ textAlign: 'center', padding: '200px 0', }}>
+          <h1 style={{ color: 'white' }}>decouvrer notre histoire depuis ces débuts..</h1>
+        </div>
+        <div className="w-1/5 flex flex-row justify-center">
             <button class=" bg-white border-0 focus:outline-none hover:bg-teal-600 rounded">
               Découvrir
             </button>
           </div>
-        </div>
+      </div>
       </Parallax>
+ 
+  
+        {/* <Background className="custom-bg ">
+          <div className="" style={{ backgroundPosition: 'center' }}>
+          <img
+            src="https://static.wixstatic.com/media/84770f_6197f6bd0a9c41788f15876c8dc8e73b~mv2.jpg/v1/fill/w_1903,h_953,al_l,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_6197f6bd0a9c41788f15876c8dc8e73b~mv2.jpg"
+            className=" "
+            alt
+            bgImageSize={{}} 
+            style={{ width: "1903px", height: "650px", objectFit:'cover' }}
+            fetchpriority="high"
+          ></img>
+        </div>
+        </Background> */}
+
+      
       <div className="grid grid-cols-2">
         <div class="px-2 flex flex-row justify-center h-[1000px]">
           <div class="flex flex-row w-full rounded sm:py-24 py-16 sm:px-10 px-6 relative justify-center">
